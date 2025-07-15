@@ -498,10 +498,7 @@ on:mousemove={handleMousemove}>
                         </div>
                         <div class="card-body">
                             <p class="card-text cargo-desc">
-                                Representante da <strong>CANGALHO</strong>,
-                                participa na abertura com reflexões sobre o
-                                regime da transparência e prevenção da
-                                corrupção.
+                                Representante da <strong>CANGALHO</strong>
                             </p>
                         </div>
                     </div>
@@ -530,7 +527,7 @@ on:mousemove={handleMousemove}>
                         </div>
                         <div class="card-body">
                             <p class="card-text cargo-desc">
-                                Consultor em Contratação Pública | Formador
+                                Consultor em Contratação Pública | <strong>Formador</strong>
                             </p>
                         </div>
                     </div>
