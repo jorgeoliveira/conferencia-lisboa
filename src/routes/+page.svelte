@@ -165,21 +165,22 @@ on:mousemove={handleMousemove}>
                     style="line-height: 75%;
                 letter-spacing: 0.05em;"
                 >
-                    Conferência <br /><span
-                        style="font-size: 1rem;line-height:120%;"
-                        >Transparência nas Organizações:<br /></span
+                    WorkShop<br /><span
+                        style="font-size: 1rem;line-height:120%;">—<br /></span
                     >
                     <span style="font-size: 1.7rem;line-height:120%;"
-                        >OS DESAFIOS DAS ENTIDADES PÚBLICAS E PRIVADAS</span
+                        >Contratação Publica para Iniciantes</span
                     >
                 </h1>
             </div>
-            <div class="col-12 col-md-4 col-lg-4 d-flex">
-                <p class="hero" style="">
-                    Numa organização conjunta da <strong>Cangalho®</strong> e
-                    <strong>DOWER</strong> em parceria com
-                    <strong>CEACP</strong> e
-                    <strong style="white-space:nowrap;">CIA Academy®</strong>
+            <div
+                class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-center"
+            >
+                <p class="hero" style="width:100%;">
+                    Numa organização conjunta da <br /><strong>CANGALHO</strong>
+                    e <br />
+                    Consórcio <strong>CEACP</strong> e <br />
+                    <strong style="white-space:nowrap;">CIAcademy®</strong>
                 </p>
             </div>
         </div>
@@ -313,16 +314,7 @@ on:mousemove={handleMousemove}>
                                                     alt="parceiro cangalho"
                                                 />
                                             </a>
-                                            <a
-                                                href="https://www.dower.pt"
-                                                class="img-conf"
-                                            >
-                                                <img
-                                                    src="/DOWER_BRANCO.png"
-                                                    style="width:90%;margin-bottom:1vh;"
-                                                    alt="ceacp"
-                                                />
-                                            </a>
+                                           
                                         </div>
                                         Parceiros:
                                         <div
@@ -355,52 +347,47 @@ on:mousemove={handleMousemove}>
                     <div class="card border-0">
                         <div class="card-body">
                             <h5 class="title-text">
-                                Transparência nas Organizações:<br />
-                                "OS DESAFIOS DAS ENTIDADES PÚBLICAS E PRIVADAS"
+                                Workshop | Contratação Pública em Debate:<br />
+                                "DESAFIOS E OPORTUNIDADES PARA OS FUTUROS JURISTAS"
                             </h5>
                             <p>
-                                Num contexto cada vez mais exigente em termos de <strong
-                                    >ética, legalidade e responsabilidade</strong
-                                >, a
-                                <strong>transparência nas organizações</strong>
-                                impõe-se como um pilar essencial para a construção
-                                de uma sociedade mais justa e sustentável. As
-                                <strong>entidades públicas e privadas</strong> enfrentam
-                                desafios crescentes para assegurar uma gestão clara,
-                                acessível e responsável, capaz de prevenir práticas
-                                abusivas e fortalecer a confiança dos cidadãos e
-                                dos mercados.
+                                A contratação pública está no centro das
+                                decisões que moldam a vida coletiva, desde a
+                                construção de infraestruturas até à prestação de
+                                serviços essenciais. Compreender este domínio é
+                                hoje indispensável para qualquer jurista que
+                                pretenda atuar com responsabilidade e visão
+                                estratégica no setor público ou em assessoria a
+                                entidades privadas.
                             </p>
 
                             <p>
-                                Este webinar surge como uma oportunidade para
-                                refletir e debater o <strong
-                                    >estado atual da transparência em Portugal</strong
-                                >, à luz do
-                                <strong
-                                    >Regime Geral da Prevenção da Corrupção</strong
-                                >, analisando os principais obstáculos e
-                                caminhos possíveis para uma implementação eficaz
-                                — tanto no setor público como no privado.
+                                Pensado especialmente para estudantes de
+                                Direito, este workshop propõe uma abordagem
+                                introdutória, acessível e prática à contratação
+                                pública, através de uma conversa informal com
+                                dois especialistas reconhecidos na área, que
+                                partilharão experiências, desafios do dia a dia
+                                e conselhos úteis para quem pretende enveredar
+                                por esta área profissional.
                             </p>
 
                             <p>
-                                Com a participação de <strong
-                                    >especialistas, decisores políticos e
-                                    representantes institucionais</strong
-                                >, o evento pretende lançar um olhar crítico e
-                                construtivo sobre temas como
-                                <strong
-                                    >a gestão de conflitos de interesses</strong
-                                >,
-                                <strong>os mecanismos de fiscalização</strong>
-                                e
-                                <strong
-                                    >a preparação financeira e legal das
-                                    empresas</strong
-                                > para responder às novas exigências legais e sociais.
+                                Será uma oportunidade única para discutir, de
+                                forma descontraída mas tecnicamente rigorosa,
+                                temas como: <br />— os princípios fundamentais
+                                do Código dos Contratos Públicos <br />— os
+                                erros mais comuns nos Contratos Públicosbr
+                                <br />— os desafios da transparência e da
+                                concorrência <br />— e as competências jurídicas
+                                mais valorizadas no setor.
                             </p>
-
+                            <p>
+                                Mais do que uma aula, este workshop será um
+                                espaço de diálogo, aproximação à prática e
+                                inspiração para quem ambiciona fazer a diferença
+                                na gestão pública.
+                            </p>
                             <h5 class="title-text tit-sticky">Programa</h5>
                             <table class="table">
                                 <tbody>
@@ -431,8 +418,8 @@ on:mousemove={handleMousemove}>
                                             <b
                                                 >Moderador: Carlos José Batalhão</b
                                             >
-                                            – Sócio Departamento Público da
-                                            DOWER LAW FIRM<br />
+                                            – Sócio Departamento Público da DOWER
+                                            LAW FIRM<br />
                                             <b>Luís Filipe Mota Almeida</b> –
                                             Assessor Jurídico e Parlamentar na
                                             Assembleia da República<br />
@@ -450,8 +437,8 @@ on:mousemove={handleMousemove}>
                                                 estas obrigações?
                                             </span><br /><br />
                                             <b>Moderadora: Ana Filipa Urbano</b>
-                                            – Sócia Departamento Público da
-                                            DOWER LAW FIRM<br />
+                                            – Sócia Departamento Público da DOWER
+                                            LAW FIRM<br />
                                             <b>Miguel Pinto</b> –
                                             Vice-Presidente do Conselho de
                                             Administração da AEP<br />
@@ -483,7 +470,7 @@ on:mousemove={handleMousemove}>
             <div class="row d-flex flex-wrap">
                 <div class="col-md-12">
                     <h1 style="margin:50px 0 50px 0;position:relative;">
-                        Participantes
+                        Oradores
                     </h1>
                 </div>
 
@@ -527,240 +514,23 @@ on:mousemove={handleMousemove}>
                     >
                         <div class="position-relative">
                             <img
-                                src="./Eduardo Castro Marques.jpg"
+                                src="./j-baltasar.jpg"
                                 class="card-img-top img-filter rounded-0"
                                 alt="Eduardo Castro Marques"
+                                
                             />
                             <div class="cut-card">
                                 <h5
                                     class="card-title"
                                     style="text-shadow: 2px 4px 0 #000000;"
                                 >
-                                    Eduardo Castro Marques
+                                    Jorge Baltasar
                                 </h5>
                             </div>
                         </div>
                         <div class="card-body">
                             <p class="card-text cargo-desc">
-                                Sócio da <strong>DOWER LAW FIRM</strong>,
-                                participa na sessão de abertura com contributos
-                                jurídicos sobre o regime da transparência.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card border-0 rounded-0 mb-5"
-                        style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="./CarlosJB.jpeg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Carlos José Batalhão"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Carlos José Batalhão
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Sócio do Departamento Público da <strong
-                                    >DOWER LAW FIRM</strong
-                                >, modera o painel sobre gestão pública e
-                                conflitos de interesse.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card equal-height border-0 rounded-0 mb-5"
-                        style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="./lfma.jpg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Luís Filipe Mota Almeida"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Luís Filipe Mota Almeida
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Assessor jurídico e parlamentar na <strong
-                                    >Assembleia da República</strong
-                                >
-                                e investigador no
-                                <strong>Lisbon Public Law</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card border-0 rounded-0 mb-5"
-                        style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="/pedro_cruz.jpg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Pedro Cruz e Silva"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Pedro Cruz e Silva
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Professor da <strong
-                                    >Universidade Lusófona</strong
-                                >, participa no debate sobre conflitos de
-                                interesse na gestão pública.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card border-0 rounded-0 mb-5"
-                        style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="./ana-filipa.jpg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Ana Filipa Urbano"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Ana Filipa Urbano
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Sócia do Departamento Público da <strong
-                                    >DOWER LAW FIRM</strong
-                                >, modera o painel sobre os impactos financeiros
-                                nas entidades privadas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card border-0 rounded-0 mb-5"
-                        style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="/miguel_pinto.jpg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Ana Filipa Urbano"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Miguel Pinto
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Vice-Presidente do Conselho de Administração
-                                (AEP).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card border-0 rounded-0 mb-5"
-                        style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="/mts.jpg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Mário Tavares da Silva"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Mário Tavares da Silva
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Ex-membro do Conselho de Prevenção da Corrupção,
-                                associado do <strong
-                                    >Observatório de Economia e Gestão de Fraude</strong
-                                >, orador no painel das entidades privadas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card border-0 rounded-0 mb-5"
-                        style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="/no-pic.jpg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Isaura Morais"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Isaura Morais
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Deputada da <strong
-                                    >Assembleia da República</strong
-                                > pelo PSD, integra o painel sobre os impactos financeiros
-                                e obrigações das empresas.
+                                Consultor em Contratação Pública | Formador
                             </p>
                         </div>
                     </div>
