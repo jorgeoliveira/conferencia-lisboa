@@ -75,7 +75,7 @@
         formData.append("formfreq", formfreq);
         try {
             const response = await fetch(
-                "https://conferenciaapi.cangalho.pt/",
+                "https://conferenciaapi.c-angalho.pt/",
                 {
                     method: "POST",
                     mode: "cors",
@@ -559,17 +559,17 @@ on:mousemove={handleMousemove}>
                     </p>
                     <p class="text-intro">
                         Prioridade nas inscrições:<br /><br />
-                        &nbsp;&nbsp;— Parceiros e Formandos CEACP & CIAcademy & Cangalho<br
+<!--                         &nbsp;&nbsp;— Parceiros e Formandos CEACP & CIAcademy & Cangalho<br
                         />
                         &nbsp;&nbsp;— Parceiros DOWER<br />
                         &nbsp;&nbsp;— Parceiros SUCH <br />
                         &nbsp;&nbsp;— Alunos do Curso de Especialização de Compras<br
                         />
-                        &nbsp;&nbsp;— Restantes inscrições<br />
+                        &nbsp;&nbsp;— Restantes inscrições<br /> -->
                     </p>
                 </div>
             </div>
-            <!-- <div id="row-form" class="col-12 form-field">
+            <div id="row-form" class="col-12 form-field">
                 <form
                     id="registrationForm"
                     on:submit|preventDefault={handleSubmit}
@@ -732,7 +732,7 @@ on:mousemove={handleMousemove}>
                         <div class="col-sm-12"></div>
                     </div>
                 </form>
-            </div> -->
+            </div>  
         </div>
     </section>
     <div class="map-wrap" style="display:none;">
