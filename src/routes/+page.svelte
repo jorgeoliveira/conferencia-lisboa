@@ -159,7 +159,7 @@ on:mousemove={handleMousemove}>
             style="text-align: center;position: sticky;
         top: 20%;"
         >
-            <div class="col-12 col-md-8 col-lg-8 d-flex flex-column">
+            <div class="col-12 col-md-12 col-lg-8 d-flex flex-column">
                 <h1
                     class="hero"
                     style="line-height: 75%;
@@ -174,10 +174,10 @@ on:mousemove={handleMousemove}>
                 </h1>
             </div>
             <div
-                class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-center"
+                class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-center"
             >
                 <p class="hero" style="width:100%;">
-                    Numa organização conjunta da <br /><strong>CANGALHO</strong>
+                    Numa organização conjunta do Direito Descomplicado, <strong>CANGALHO</strong>
                     e <br />
                     Consórcio <strong>CEACP</strong> e <br />
                     <strong style="white-space:nowrap;">CIAcademy®</strong>
