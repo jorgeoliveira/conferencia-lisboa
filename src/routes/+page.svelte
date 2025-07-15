@@ -95,7 +95,7 @@
                     const rowForm = (document.getElementById(
                         "row-form",
                     ).innerHTML =
-                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a reserva, caso nao receba, contacte <br>dower@ceacp-cia-cangalho.com</p>' +
+                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a reserva, caso nao receba, contacte <br>sv@ceacp-ciacademy-cangalho.com</p>' +
                         "</div></div>");
                 } else if (
                     data.status == "error01" ||
@@ -247,7 +247,7 @@ on:mousemove={handleMousemove}>
                                         style="width: 100%;;"
                                     >
                                         <a
-                                            href="mailto:dower@ceacp-cia-cangalho.com"
+                                            href="mailto:sv@ceacp-ciacademy-cangalho.com"
                                             target="_blank"
                                         >
                                             <img
@@ -688,9 +688,9 @@ on:mousemove={handleMousemove}>
                                 O certificado de presença tem um custo de 10€, devendo
                                 ser solicitados por email com o comprovativo de pagamento
                                 para o seguinte email:<br /><a
-                                    href="mailto:dower@ceacp-cia-cangalho.com"
+                                    href="mailto:sv@ceacp-ciacademy-cangalho.com"
                                     class="mailto"
-                                    >dower@ceacp-cia-cangalho.com</a
+                                    >sv@ceacp-ciacademy-cangalho.com</a
                                 ><br /><br /><i
                                     >(Para os alunos do 10º Curso de
                                     Especialização em Compras e Contratação
