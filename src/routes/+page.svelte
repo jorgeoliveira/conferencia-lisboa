@@ -69,9 +69,7 @@
         const formData = new FormData(formElement);
 
         formData.append("recaptchaResponse", recaptchaResponse);
-        const formfreq = document.getElementById("formfreq").checked
-            ? "Sim"
-            : "Não";
+        const formfreq = "";
         formData.append("formfreq", formfreq);
         try {
             const response = await fetch(
@@ -145,7 +143,7 @@ on:mousemove={handleMousemove}>
                 style="margin-top: 5vh;padding-right: 9vw!important;"
             >
                 <Countdown
-                    targetDate={new Date("2025-05-05T09:30:00").getTime()}
+                    targetDate={new Date("2025-07-31T10:00:00").getTime()}
                 />
             </div>
         </div>
@@ -216,8 +214,8 @@ on:mousemove={handleMousemove}>
                                     />
                                 </div>
                                 <div class="col-8 p-0 m-0">
-                                    <p class="p-calendar">5 de maio 2025</p>
-                                    <p class="p-calendar">09:30 - 12:30</p>
+                                    <p class="p-calendar">Dia 31 de Julho</p>
+                                    <p class="p-calendar">das 10h as 13h</p>
                                 </div>
                                 <div class="col-12 p-0 m-0">
                                     <div
@@ -388,7 +386,7 @@ on:mousemove={handleMousemove}>
                                 inspiração para quem ambiciona fazer a diferença
                                 na gestão pública.
                             </p>
-                            <h5 class="title-text tit-sticky">Programa</h5>
+                           <!--  <h5 class="title-text tit-sticky">Programa</h5>
                             <table class="table">
                                 <tbody>
                                     <tr>
@@ -461,7 +459,7 @@ on:mousemove={handleMousemove}>
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table> -->
                         </div>
                     </div>
                 </div>
@@ -635,7 +633,7 @@ on:mousemove={handleMousemove}>
                                 required
                             />
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
                             <label for="org">Organização</label>
                             <input
                                 id="org"
@@ -645,7 +643,7 @@ on:mousemove={handleMousemove}>
                                 required
                             />
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6" style="display:none;">
                             <label for="entpar"
                                 >Ent. Parceira <span style="font-size:0.8rem;">
                                     [Cangalho, Dower ou Outra]</span
@@ -670,13 +668,14 @@ on:mousemove={handleMousemove}>
                             />
                         </div>
 
-                        <div class="col-sm-12 d-flex" style="margin:0;">
+                      <!--   <div class="col-sm-12 d-flex" style="margin:0;display:none">
                             <div id="inputPreview2">
                                 <input
                                     name="formfreq"
                                     id="formfreq"
                                     type="checkbox"
                                     class="css-checkbox"
+                                    hidden
                                 />
                                 <label for="formfreq"></label>
                             </div>
@@ -701,7 +700,7 @@ on:mousemove={handleMousemove}>
                                 <strong>PT50 0007 0000 0075 0034 7502 3</strong
                                 ><br />
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-sm-12 d-flex" style="margin:0;">
                             <div id="inputPreview">
                                 <input
