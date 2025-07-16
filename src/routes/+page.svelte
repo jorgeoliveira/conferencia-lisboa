@@ -75,7 +75,7 @@
         formData.append("formfreq", formfreq);
         try {
             const response = await fetch(
-                "https://conferenciaapi.cangalho.pt/",
+                "https://conferenciaapi.cangalho.pt/api/",
                 {
                     method: "POST",
                     mode: "cors",
@@ -105,7 +105,7 @@
                         "row-form",
                     ).innerHTML =
                         '<div class="row"><div class="col-12"><h5>Ocorreu um erro</h5><p>Por favor volte a re-carregar a página e tente de novo!</p>' +
-                        "</div></div>");
+                        "</div></div>"+data.message);
                 }
                 console.log(data.status);
             } else {
