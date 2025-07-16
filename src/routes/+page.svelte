@@ -553,8 +553,8 @@ on:mousemove={handleMousemove}>
                         OS DESAFIOS DAS ENTIDADES PÚBLICAS E PRIVADAS.
                     </p>
                     <p class="text-intro">
-                        Prioridade nas inscrições:<br /><br />
-<!--                         &nbsp;&nbsp;— Parceiros e Formandos CEACP & CIAcademy & Cangalho<br
+                     <!--      Prioridade nas inscrições:<br /><br />
+                      &nbsp;&nbsp;— Parceiros e Formandos CEACP & CIAcademy & Cangalho<br
                         />
                         &nbsp;&nbsp;— Parceiros DOWER<br />
                         &nbsp;&nbsp;— Parceiros SUCH <br />
