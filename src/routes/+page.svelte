@@ -75,7 +75,7 @@
         formData.append("formfreq", formfreq);
         try {
             const response = await fetch(
-                "https://conferenciaapi.c-angalho.pt/",
+                "https://conferenciaapi.cangalho.pt/",
                 {
                     method: "POST",
                     mode: "cors",
