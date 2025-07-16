@@ -215,7 +215,7 @@ on:mousemove={handleMousemove}>
                                 </div>
                                 <div class="col-8 p-0 m-0">
                                     <p class="p-calendar">Dia 31 de Julho</p>
-                                    <p class="p-calendar">das 10h as 13h</p>
+                                    <p class="p-calendar">das 10h às 13h</p>
                                 </div>
                                 <div class="col-12 p-0 m-0">
                                     <div
