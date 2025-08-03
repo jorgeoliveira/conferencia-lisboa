@@ -206,9 +206,7 @@ on:mousemove={handleMousemove}>
                         >
                             <div class="row row-center-v">
                                 <div class="col-12 p-0 m-0">
-                                    <h5
-                                        style="letter-spacing: 0.1em;"
-                                    >
+                                    <h5 style="letter-spacing: 0.1em;">
                                         Evento
                                     </h5>
                                 </div>
@@ -354,7 +352,10 @@ on:mousemove={handleMousemove}>
                 </div>
             </div>
 
-            <div class="container">
+            <div
+                class="container"
+                style="background-color: #f0f0f0;margin: 0 10px 0 10px;"
+            >
                 <div class="row">
                     <div class="col-12">
                         <h1 style="margin: 50px 0; position: relative;">
@@ -596,7 +597,6 @@ on:mousemove={handleMousemove}>
 
 <style>
     .wrapper {
-        
         color: var(--bs-body-color);
         overflow: hidden;
     }
@@ -631,7 +631,7 @@ on:mousemove={handleMousemove}>
         background-color: rgba(0, 0, 0, 0.4);
         padding: 10px 20px 15px 20px;
         color: #fff;
-        height: 25%;
+        min-height: 10px;
         display: flex;
         align-items: center;
     }
@@ -668,9 +668,9 @@ on:mousemove={handleMousemove}>
         color: var(--bs-body-color);
         text-underline-offset: 7px;
     }
-    
+
     .form-ins {
-        background-color: #f0f0f0; 
+        background-color: #f0f0f0;
         padding: 5vh 5vw;
     }
 
@@ -693,5 +693,4 @@ on:mousemove={handleMousemove}>
     .css-checkbox:checked + label {
         background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdxJybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzIiCiAgIHZpZXdCb3g9IjAgMCAxMi4zMDIgMTIuMzAyIgogICBoZWlnaHQ9IjEyLjMwMiIKICAgd2lkdGg9IjEyLjMwMiI+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMTQiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMxMiIgLz4KICA8cGF0aCAgICAgZD0iTSAxMS40NjUgMS44MjIgQyAxMS4xMzIgMS40ODkgMTAuNjA5IDEuNDg5IDEwLjI3NSAxLjgyMiBMIDQuNTUgNy41NDcgTCAyLjAzMSA1MDIgQyAxLjY5OCA0LjY2OSAxLjE3NSA0LjY2OSAwLjg0MiA1LjAwMyBDIDAuNTA4IDUuMzM3IDAuNTA4IDUuODU5IDAuODQyIDYuMTkzIEwgMy4zOTMgOC43NDMgQyAzLjcyNyA5LjA3NyA0LjI1IDkuMDc3IDQuNTg0IDguNzQzIEwgMTEuNDY1IDEuODI4MiIgCiAgICAgc3R5bGU9ImZpbGw6IzAwMzM2NjtmaWxsLW9wYWNpdHk6MSIKICAgaWQ9InBhdGg0IiAvPgo8L3N2Zz4K");
     }
-
 </style>
