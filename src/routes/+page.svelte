@@ -194,7 +194,7 @@ on:mousemove={handleMousemove}>
     </section>
     <div class="container-full section-2 bg-pattern">
         <div id="main-section" class="container">
-            <div class="row mt-5">
+            <div class="row mt-5 align-items-stretch d-flex">
                 <div class="col-12 col-md-3 order-2 order-md-1">
                     <div
                         class="card border-0"
