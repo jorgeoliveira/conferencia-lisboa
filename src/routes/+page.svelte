@@ -186,7 +186,7 @@ on:mousemove={handleMousemove}>
             >
                 <p class="hero" style="width:100%;">
                     Numa organização conjunta<br />
-                    <strong>CEACP</strong><br />
+                    <strong>Cangalho</strong><br />
                     <strong style="white-space:nowrap;">CIAcademy®</strong>
                 </p>
             </div>
@@ -266,7 +266,8 @@ on:mousemove={handleMousemove}>
                                     text-transform: uppercase;text-align: center;"
                                     >
                                         <br />
-                                        Promotores:
+
+                                        Parceiros:
                                         <div
                                             style="display:flex;justify-content:center;align-items:center;flex-direction: column;text-align:center;margin-top:5vh;"
                                         >
@@ -275,18 +276,6 @@ on:mousemove={handleMousemove}>
                                                     src="/cangalho-1.png"
                                                     class="img-conf-1"
                                                     alt="parceiro cangalho"
-                                                />
-                                            </a>
-                                        </div>
-                                        Parceiros:
-                                        <div
-                                            style="display:flex;justify-content:center;align-items:center;flex-direction: column;text-align:center;margin-top:5vh;"
-                                        >
-                                            <a href="https://www.ceacp.pt">
-                                                <img
-                                                    src="/ceacp.png"
-                                                    class="img-conf"
-                                                    alt="ceacp"
                                                 />
                                             </a>
                                             <a
@@ -676,14 +665,13 @@ on:mousemove={handleMousemove}>
 
     .cool {
         color: var(--bs-body-color);
-        background-color: #fff;
-        border: 1px solid var(--bs-border-color);
+        background-color: #f0f0f0;
+        border: 1px solid #000000;
     }
 
     .submit-ceacp {
-        background-color: var(--bs-primary);
-        color: #fff;
-        border: 1px solid var(--bs-primary);
+        color: black;
+        border: 1px solid black;
     }
 
     #inputPreview {
