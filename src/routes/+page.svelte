@@ -342,7 +342,7 @@ on:mousemove={handleMousemove}>
             </div>
 
             <div
-                class="container m-0 "
+                class="container m-2 "
                 style="background-color: #f0f0f0;margin: 0 10px 0 10px; padding: 0 25px 25px 25px;"
             >
                 <div class="row">
