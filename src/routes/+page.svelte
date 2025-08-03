@@ -675,7 +675,7 @@ on:mousemove={handleMousemove}>
     }
 
     #inputPreview {
-        border: solid 2px var(--bs-body-color);
+        border: solid 1px var(--bs-body-color);
     }
 
     .css-checkbox:checked + label {
