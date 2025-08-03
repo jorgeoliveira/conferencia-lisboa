@@ -346,7 +346,7 @@ on:mousemove={handleMousemove}>
                 style="background-color: #f0f0f0;margin: 0 10px 0 10px; padding: 0 25px 25px 25px;"
             >
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 p-0">
                         <h1 style="margin: 50px 0; position: relative;">
                             Oradores
                         </h1>
