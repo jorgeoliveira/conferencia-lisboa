@@ -28,7 +28,8 @@ body::before {
     bottom: 0;
     background: url("/portugal-1350648 – grande.jpeg") no-repeat center center fixed;
     background-size: cover;
-    z-index: -1; /* Garante que fique atrás do conteúdo */
+    z-index: -1;
+    /* Garante que fique atrás do conteúdo */
     height: 120vh;
     /* opacity: 0.1; Lower opacity for dark mode */
 }
@@ -42,11 +43,17 @@ code {
     display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     position: relative;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: var(--primary-gold); /* Gold for headers */
+    color: var(--primary-gold);
+    /* Gold for headers */
 }
 
 h1 {
@@ -82,7 +89,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(17, 17, 17, 0.8); /* Dark transparent header */
+    background-color: rgba(17, 17, 17, 0.8);
+    /* Dark transparent header */
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -320,10 +328,10 @@ select:-webkit-autofill:focus {
     display: none;
 }
 
- .card-mobile {
-        max-width: 280px;
-        width: 100%;
-    }
+.card-mobile {
+    max-width: 280px;
+    width: 100%;
+}
 
 html.lenis {
     height: auto;
@@ -346,7 +354,9 @@ html.lenis {
 }
 
 @media (min-width: 576px) and (max-width: 1024px) {
-    .container-sm, .container {
+
+    .container-sm,
+    .container {
         max-width: 100%;
     }
 }
@@ -385,7 +395,8 @@ html.lenis {
         align-items: start !important;
         margin-top: 50px;
     }
-     .card-mobile {
+
+    .card-mobile {
         max-width: unset;
         width: 100%;
     }
