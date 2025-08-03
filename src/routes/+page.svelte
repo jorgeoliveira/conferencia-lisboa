@@ -161,7 +161,7 @@ on:mousemove={handleMousemove}>
         >
             <div
                 class="col-12 col-md-12 col-lg-8 d-flex flex-column"
-                style="width:100%;"
+                style="width:90%;"
             >
                 <h1
                     class="hero"
@@ -172,8 +172,8 @@ on:mousemove={handleMousemove}>
                         style="font-size: 1.6rem;line-height:120%;"
                         >PORTO<br /></span
                     >
-                    <p style="font-size: 0.8rem;line-height:120%;">
-                        Conferência será presencial<br />
+                    <p style="font-size: 0.6rem;line-height:120%;">
+                        (Presencial)<br />
                     </p>
                     <span style="font-size: 1.7rem;line-height:120%;"
                         >OS DESAFIOS DAS COMPRAS PÚBLICAS EM ESPECIAL O
@@ -186,7 +186,7 @@ on:mousemove={handleMousemove}>
             >
                 <p class="hero" style="width:100%;">
                     Numa organização conjunta<br />
-                    <strong>CEACP</strong> e <br />
+                    <strong>CEACP</strong><br />
                     <strong style="white-space:nowrap;">CIAcademy®</strong>
                 </p>
             </div>
