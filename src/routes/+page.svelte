@@ -170,7 +170,7 @@ on:mousemove={handleMousemove}>
                 >
                     CONFERÊNCIA 2025<br /><span
                         style="font-size: 1.6rem;line-height:120%;"
-                        >PORTO<br /></span
+                        >LISBOA<br /></span
                     >
                     <p style="font-size: 0.6rem;line-height:120%;">
                         (Presencial)<br />
