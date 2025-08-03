@@ -103,7 +103,8 @@
                         "row-form",
                     ).innerHTML =
                         '<div class="row"><div class="col-12"><h5>Ocorreu um erro</h5><p>Por favor volte a re-carregar a página e tente de novo!</p>' +
-                        "</div></div>"+data.message);
+                        "</div></div>" +
+                        data.message);
                 }
                 console.log(data.status);
             } else {
@@ -152,22 +153,31 @@ on:mousemove={handleMousemove}>
         class="d-flex justify-content-center align-items-center text-hero"
         style="height:70vh;"
     >
-        <div id="hero"
+        <div
+            id="hero"
             class="container row d-flex flex-column justify-content-center align-items-center"
             style="text-align: center;position: sticky;
         top: 20%;"
         >
-            <div class="col-12 col-md-12 col-lg-8 d-flex flex-column " style="width:100%;">
+            <div
+                class="col-12 col-md-12 col-lg-8 d-flex flex-column"
+                style="width:90%;"
+            >
                 <h1
                     class="hero"
                     style="line-height: 75%;
                 letter-spacing: 0.05em;"
                 >
-                CONFERÊNCIA 2025<br /><span
-                        style="font-size: 1rem;line-height:120%;">PORTO<br /></span
+                    CONFERÊNCIA 2025<br /><span
+                        style="font-size: 1.6rem;line-height:120%;"
+                        >PORTO<br /></span
                     >
+                    <p style="font-size: 0.6rem;line-height:120%;">
+                        (Presencial)<br />
+                    </p>
                     <span style="font-size: 1.7rem;line-height:120%;"
-                        >OS DESAFIOS DAS COMPRAS PÚBLICAS EM ESPECIAL O PLANEAMENTO</span
+                        >OS DESAFIOS DAS COMPRAS PÚBLICAS EM ESPECIAL O
+                        PLANEAMENTO</span
                     >
                 </h1>
             </div>
@@ -176,7 +186,7 @@ on:mousemove={handleMousemove}>
             >
                 <p class="hero" style="width:100%;">
                     Numa organização conjunta<br />
-                    <strong>CEACP</strong> e <br />
+                    <strong>CEACP</strong><br />
                     <strong style="white-space:nowrap;">CIAcademy®</strong>
                 </p>
             </div>
@@ -311,7 +321,6 @@ on:mousemove={handleMousemove}>
                                                     alt="parceiro cangalho"
                                                 />
                                             </a>
-                                           
                                         </div>
                                         Parceiros:
                                         <div
@@ -344,23 +353,45 @@ on:mousemove={handleMousemove}>
                     <div class="card border-0">
                         <div class="card-body">
                             <h5 class="title-text">
-                                CONFERÊNCIA 2025: OS DESAFIOS DAS COMPRAS PÚBLICAS, EM ESPECIAL O PLANEAMENTO
+                                CONFERÊNCIA 2025: OS DESAFIOS DAS COMPRAS
+                                PÚBLICAS, EM ESPECIAL O PLANEAMENTO
                             </h5>
                             <p>
-                                A contratação pública é um pilar fundamental da governação e da economia, movimentando vastos recursos e impactando diretamente a qualidade dos serviços prestados aos cidadãos. No entanto, a sua eficácia depende de um planeamento rigoroso e estratégico, uma área que apresenta desafios constantes para as entidades públicas.
+                                A contratação pública é um pilar fundamental da
+                                governação e da economia, movimentando vastos
+                                recursos e impactando diretamente a qualidade
+                                dos serviços prestados aos cidadãos. No entanto,
+                                a sua eficácia depende de um planeamento
+                                rigoroso e estratégico, uma área que apresenta
+                                desafios constantes para as entidades públicas.
                             </p>
 
                             <p>
-                                Esta conferência visa debater os obstáculos e as oportunidades na contratação pública, com um foco especial na importância do planeamento. Analisaremos como um planeamento bem estruturado pode garantir a transparência, a eficiência e a concorrência, prevenindo irregularidades e otimizando o uso dos dinheiros públicos.
+                                Esta conferência visa debater os obstáculos e as
+                                oportunidades na contratação pública, com um
+                                foco especial na importância do planeamento.
+                                Analisaremos como um planeamento bem estruturado
+                                pode garantir a transparência, a eficiência e a
+                                concorrência, prevenindo irregularidades e
+                                otimizando o uso dos dinheiros públicos.
                             </p>
 
                             <p>
-                                Teremos a honra de contar com a presença de <strong>Paulo Madeira</strong>, autor do aclamado livro "Guia Prático - Planeamento de Compras Públicas". A sua vasta experiência e conhecimento na matéria proporcionarão uma visão aprofundada e soluções práticas para os desafios que os profissionais da área enfrentam diariamente.
+                                Teremos a honra de contar com a presença de <strong
+                                    >Paulo Madeira</strong
+                                >, autor do aclamado livro "Guia Prático -
+                                Planeamento de Compras Públicas". A sua vasta
+                                experiência e conhecimento na matéria
+                                proporcionarão uma visão aprofundada e soluções
+                                práticas para os desafios que os profissionais
+                                da área enfrentam diariamente.
                             </p>
                             <p>
-                                Junte-se a nós para um dia de reflexão e debate sobre o futuro da contratação pública em Portugal.
+                                Junte-se a nós para um dia de reflexão e debate
+                                sobre o futuro da contratação pública em
+                                Portugal.
                             </p>
-                           <!--  <h5 class="title-text tit-sticky">Programa</h5>
+                            <!--  <h5 class="title-text tit-sticky">Programa</h5>
                             <table class="table">
                                 <tbody>
                                     <tr>
@@ -439,40 +470,73 @@ on:mousemove={handleMousemove}>
                 </div>
             </div>
 
-            <div class="row d-flex flex-wrap">
-                <div class="col-md-12">
-                    <h1 style="margin:50px 0 50px 0;position:relative;">
-                        Oradores
-                    </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 style="margin: 50px 0; position: relative;">
+                            Oradores
+                        </h1>
+                    </div>
                 </div>
 
-                <!--- novos -->
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div
-                        class="card border-0 rounded-0 mb-5"
-                        style=""
-                    >
-                        <div class="position-relative">
-                            <img
-                                src="./no-pic.jpg"
-                                class="card-img-top img-filter rounded-0"
-                                alt="Paulo Madeira"
-                            />
-                            <div class="cut-card">
-                                <h5
-                                    class="card-title"
-                                    style="text-shadow: 2px 4px 0 #000000;"
-                                >
-                                    Paulo Madeira
-                                </h5>
+                <!-- Flex row para ≥ md, empilhado abaixo -->
+                <div
+                    class="d-flex flex-column flex-md-row align-items-start gap-4"
+                >
+                    <!-- Coluna 1: Card limitado a 280px -->
+                    <div class="flex-shrink-0 card-mobile" style="">
+                        <div class="card border-0 rounded-0">
+                            <div class="position-relative">
+                                <img
+                                    src="https://www.ceacp-ciacademy.pt/wp-content/uploads/2023/08/pm-209x300.jpg"
+                                    class="card-img-top img-filter rounded-0"
+                                    alt="Paulo Madeira"
+                                />
+                                <div class="cut-card">
+                                    <h5
+                                        class="card-title"
+                                        style="text-shadow: 2px 4px 0 #000000;"
+                                    >
+                                        Paulo Madeira
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text cargo-desc">
+                                    Autor do livro <strong
+                                        >"Guia Prático - Planeamento de Compras
+                                        Públicas"</strong
+                                    >
+                                </p>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text cargo-desc">
-                                Autor do livro <strong>"Guia Prático- Planeamento de Compras Públicas"</strong>
-                            </p>
-                        </div>
+                    </div>
+
+                    <!-- Coluna 2: Currículo ocupa o resto -->
+                    <div class="flex-grow-1" style="max-width: 800px;">
+                        <h4 style="font-weight: bold;">Currículo</h4>
+                        <p>
+                            Paulo Madeira é especialista em contratação pública
+                            com vasta experiência na área das compras públicas
+                            estratégicas. É formador em diversas instituições
+                            públicas e privadas, tendo contribuído ativamente
+                            para a capacitação de técnicos e decisores.
+                            <br /><br />
+                            É também o autor do livro
+                            <em
+                                >"Guia Prático - Planeamento de Compras
+                                Públicas"</em
+                            >, uma obra de referência no setor.
+                            <br /><br />
+                            Tem desempenhado funções de consultoria em vários organismos
+                            da Administração Pública, focando-se na melhoria dos
+                            procedimentos de contratação, planeamento estratégico
+                            de compras e implementação de boas práticas.
+                            <br /><br />
+                            A sua abordagem prática e conhecimento aprofundado da
+                            legislação e dos desafios do setor fazem dele um orador
+                            de excelência.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -493,10 +557,11 @@ on:mousemove={handleMousemove}>
                 </div>
                 <div class="col-12" style="margin: 0vh 0 5vh 0;">
                     <p class=" text-intro">
-                        Junte-se a nós para debater os desafios e o futuro da contratação pública.
+                        Junte-se a nós para debater os desafios e o futuro da
+                        contratação pública.
                     </p>
                     <p class="text-intro">
-                     <!--      Prioridade nas inscrições:<br /><br />
+                        <!--      Prioridade nas inscrições:<br /><br />
                       &nbsp;&nbsp;— Parceiros e Formandos CEACP & CIAcademy & Cangalho<br
                         />
                         &nbsp;&nbsp;— Parceiros DOWER<br />
@@ -611,7 +676,7 @@ on:mousemove={handleMousemove}>
                             />
                         </div>
 
-                      <!--   <div class="col-sm-12 d-flex" style="margin:0;display:none">
+                        <!--   <div class="col-sm-12 d-flex" style="margin:0;display:none">
                             <div id="inputPreview2">
                                 <input
                                     name="formfreq"
@@ -671,7 +736,7 @@ on:mousemove={handleMousemove}>
                         <div class="col-sm-12"></div>
                     </div>
                 </form>
-            </div>  
+            </div>
         </div>
     </section>
     <div class="map-wrap" style="display:none;">
@@ -746,6 +811,7 @@ on:mousemove={handleMousemove}>
         margin: 0;
         font-weight: 300;
     }
+
     .txt-area,
     .txt-area:focus {
         width: 100%;
@@ -779,5 +845,6 @@ on:mousemove={handleMousemove}>
             width: 70%;
             margin-bottom: 5vh;
         }
+           
     }
 </style>
