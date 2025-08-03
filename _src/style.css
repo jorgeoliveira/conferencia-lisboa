@@ -1,14 +1,14 @@
-
 :root {
-    --form-color: #f9f9f9;
-    --accent-color: #0D3B66; /* Azul escuro inspirado no Porto */
+    --form-color: #ffffff;
+    --accent-color: #0056b3;
     --text-dark: #222222;
     --bg-light: #ffffff;
+
+    /* New Dark Theme Palette */
     --dark-bg: #ffffff;
     --light-text: #222222;
-    --primary-gold: #D4AF37; /* Dourado suave */
+    --primary-gold: #b38f00;
 }
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -31,7 +31,7 @@ body::before {
     z-index: -1;
     /* Garante que fique atrás do conteúdo */
     height: 120vh;
-    /* opacity: 0.06; Lower opacity for dark mode */
+    /* opacity: 0.1; Lower opacity for dark mode */
 }
 
 code {

@@ -127,7 +127,7 @@ on:mousemove={handleMousemove}>
 <div class="blob" style="left:{m.x}px; top:{m.y}px" ></div>
 -->
 <div class="wrapper">
-    <div class="header">
+    <div class="header" style="">
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
@@ -192,7 +192,7 @@ on:mousemove={handleMousemove}>
             </div>
         </div>
     </section>
-    <div class="container-full section-2 bg-pattern">
+    <div class="container-full section-2 bg-pattern" style="">
         <div id="main-section" class="container">
             <div class="row mt-5">
                 <div class="col-12 col-md-3 order-2 order-md-1">
@@ -202,12 +202,14 @@ on:mousemove={handleMousemove}>
                     >
                         <div
                             class="card-body"
-                            style="background: var(--form-color);padding-top:50px;"
+                            style="background: var(--form-color);color: #fff !important;padding-top:50px;"
                         >
                             <div class="row row-center-v">
                                 <div class="col-12 p-0 m-0">
                                     <h5
-                                        style="letter-spacing: 0.1em;"
+                                        style="letter-spacing: 0.1em;
+                               
+                            "
                                     >
                                         Evento
                                     </h5>
@@ -217,7 +219,7 @@ on:mousemove={handleMousemove}>
                                     <img
                                         src="https://www.ceacp.pt/wp-content/uploads/2021/05/clock-1-150x150.png"
                                         style="width: 50px;
-                               padding: 2vh 0;"
+                               padding: 2vh 0;mix-blend-mode: plus-lighter;"
                                     />
                                 </div>
                                 <div class="col-8 p-0 m-0">
@@ -230,7 +232,9 @@ on:mousemove={handleMousemove}>
                                     ></div>
                                     <p
                                         class="p-calendar pt-3"
-                                        style="text-transform: uppercase; font-weight: 500; font-size: 13px;"
+                                        style="    text-transform: uppercase;
+                                        font-weight: 500;
+                                        font-size: 13px;mix-blend-mode: plus-lighter;"
                                     >
                                         Local: Porto
                                     </p>
@@ -239,13 +243,15 @@ on:mousemove={handleMousemove}>
                                     ></div>
                                     <p
                                         class="p-calendar pt-3"
-                                        style="text-transform: uppercase; font-weight: 500; font-size: 13px;"
+                                        style="    text-transform: uppercase;
+                                font-weight: 500;
+                                font-size: 13px;filter: brightness(2.5);"
                                     >
                                         Contactos
                                     </p>
                                     <div
                                         class="d-flex mt-2"
-                                        style="width: 100%;"
+                                        style="width: 100%;;"
                                     >
                                         <a
                                             href="mailto:sv@ceacp-ciacademy-cangalho.com"
@@ -255,17 +261,53 @@ on:mousemove={handleMousemove}>
                                                 src="icons8-at-sign-100.png"
                                                 width="50px"
                                                 alt=""
-                                                style="cursor: pointer;"
+                                                style="cursor: pointer;filter: brightness(3.5);"
+                                            />
+                                        </a>
+                                        <!--    <a
+                                        href="https://www.linkedin.com/company/cia-competence-institute-and-academy/?viewAsMember=true"
+                                        target="_blank"
+                                    >
+                                    <img src="icons8-linkedin-100.png" alt="" style="margin-left:15px;cursor: pointer;width: 35px; margin-top: 7px;filter: brightness(3.5); ">
+                                    </a> -->
+                                    </div>
+                                    <!-- 
+                                    <div
+                                        style="width:100%; height:2px;background-color: #999;margin-top: 2vh;"
+                                    ></div>
+
+                                    <p
+                                        class="p-calendar pt-3"
+                                        style="    text-transform: uppercase;
+                                    font-weight: 500;
+                                    font-size: 13px;"
+                                    >
+                                        Consultar o programa em pdf:
+                                    </p>
+                                    <div
+                                        class="d-flex mt-2"
+                                        style="width: 100%;;"
+                                    >
+                                        <a
+                                            href="conferencia-oe2025.pdf"
+                                            target="_blank"
+                                        >
+                                            <img
+                                                src="icons8-pdf-64.png"
+                                                width="40px"
+                                                alt=""
+                                                style="cursor: pointer;filter: brightness(4.5);margin-left: 5px;"
                                             />
                                         </a>
                                     </div>
+                                      -->
                                     <div
                                         style="width:100%; height:2px;background-color: #999;margin-top: 2vh;"
                                     ></div>
                                     <div
                                         class="he-ro"
-                                        style="font-weight: 500;display:block;font-size: 13px;
-                                    text-transform: uppercase;text-align: center;"
+                                        style="color:white;font-weight: 500;display:block;font-size: 13px;
+                                    text-transform: uppercase;text--align: center;"
                                     >
                                         <br />
                                         Promotores:
@@ -349,6 +391,80 @@ on:mousemove={handleMousemove}>
                                 sobre o futuro da contratação pública em
                                 Portugal.
                             </p>
+                            <!--  <h5 class="title-text tit-sticky">Programa</h5>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">9h30</th>
+                                        <td>
+                                            <span style="font-style: italic;">
+                                                Abertura e Considerações Gerais
+                                                sobre o Atual Quadro da
+                                                Transparência – Regime Geral da
+                                                Prevenção da Corrupção
+                                            </span><br /><br />
+                                            <b>Sérgio Fonseca</b> – CANGALHO<br
+                                            />
+                                            <b>Eduardo Castro Marques</b> – DOWER
+                                            LAW FIRM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10h00</th>
+                                        <td>
+                                            <span style="font-style: italic;">
+                                                Entidades Públicas – A boa
+                                                gestão pública e os conflitos de
+                                                interesses: da implementação à
+                                                fiscalização
+                                            </span><br /><br />
+                                            <b
+                                                >Moderador: Carlos José Batalhão</b
+                                            >
+                                            – Sócio Departamento Público da DOWER
+                                            LAW FIRM<br />
+                                            <b>Luís Filipe Mota Almeida</b> –
+                                            Assessor Jurídico e Parlamentar na
+                                            Assembleia da República<br />
+                                            <b>Professor Pedro Cruz e Silva</b> –
+                                            Professor Universidade Lusófona
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11h00</th>
+                                        <td>
+                                            <span style="font-style: italic;">
+                                                Entidades Privadas – Impactos
+                                                financeiros: Estão as empresas
+                                                portuguesas preparadas para
+                                                estas obrigações?
+                                            </span><br /><br />
+                                            <b>Moderadora: Ana Filipa Urbano</b>
+                                            – Sócia Departamento Público da DOWER
+                                            LAW FIRM<br />
+                                            <b>Miguel Pinto</b> –
+                                            Vice-Presidente do Conselho de
+                                            Administração da AEP<br />
+                                            <b>Mário Tavares da Silva</b> –
+                                            Ex-membro do Conselho de Prevenção
+                                            da Corrupção. Associado do
+                                            Observatório de Economia e Gestão de
+                                            Fraude<br />
+                                            <b>Isaura Morais</b> – Deputada Assembleia
+                                            da República (PSD)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12h00</th>
+                                        <td>
+                                            <span style="font-style: italic;">
+                                                Debate geral / perguntas e
+                                                respostas
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
                         </div>
                     </div>
                 </div>
@@ -443,6 +559,16 @@ on:mousemove={handleMousemove}>
                     <p class=" text-intro">
                         Junte-se a nós para debater os desafios e o futuro da
                         contratação pública.
+                    </p>
+                    <p class="text-intro">
+                        <!--      Prioridade nas inscrições:<br /><br />
+                      &nbsp;&nbsp;— Parceiros e Formandos CEACP & CIAcademy & Cangalho<br
+                        />
+                        &nbsp;&nbsp;— Parceiros DOWER<br />
+                        &nbsp;&nbsp;— Parceiros SUCH <br />
+                        &nbsp;&nbsp;— Alunos do Curso de Especialização de Compras<br
+                        />
+                        &nbsp;&nbsp;— Restantes inscrições<br /> -->
                     </p>
                 </div>
             </div>
@@ -550,6 +676,39 @@ on:mousemove={handleMousemove}>
                             />
                         </div>
 
+                        <!--   <div class="col-sm-12 d-flex" style="margin:0;display:none">
+                            <div id="inputPreview2">
+                                <input
+                                    name="formfreq"
+                                    id="formfreq"
+                                    type="checkbox"
+                                    class="css-checkbox"
+                                    hidden
+                                />
+                                <label for="formfreq"></label>
+                            </div>
+                            <div style="margin-left:15px;">
+                                Deseja certificado?<br /><br />
+                                O certificado de presença tem um custo de 10€, devendo
+                                ser solicitados por email com o comprovativo de pagamento
+                                para o seguinte email:<br /><a
+                                    href="mailto:sv@ceacp-ciacademy-cangalho.com"
+                                    class="mailto"
+                                    >sv@ceacp-ciacademy-cangalho.com</a
+                                ><br /><br /><i
+                                    >(Para os alunos do 10º Curso de
+                                    Especialização em Compras e Contratação
+                                    Pública o certificado está incluído.)</i
+                                ><br /><br />
+                                <strong>Dados para pagamento:</strong><br />
+                                CIA – Competence Institute and Academy, Uni. Lda.<br
+                                />
+                                Nipc 514 201 479<br />
+                                IBAN
+                                <strong>PT50 0007 0000 0075 0034 7502 3</strong
+                                ><br />
+                            </div>
+                        </div> -->
                         <div class="col-sm-12 d-flex" style="margin:0;">
                             <div id="inputPreview">
                                 <input
@@ -595,31 +754,44 @@ on:mousemove={handleMousemove}>
 {/if}
 
 <style>
-    .wrapper {
-        
-        color: var(--bs-body-color);
-        overflow: hidden;
-    }
     b,
     strong {
         font-weight: 700;
     }
     p {
-        font-size: 0.9rem;
+        font--size: 0.9rem;
         font-family: "Poppins";
         line-height: 180%;
     }
     .card-img-top {
         transition: transform 0.3s ease-in-out;
+        filter: brightness(1.3);
+    }
+    .img-filter {
     }
     .card:hover .card-img-top {
         transform: translateY(-5px);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .special-btn {
+        letter-spacing: 0.1em;
+        /* margin-bottom: 5vh; */
+        font-family: "Playfair Display", serif;
+        line-height: 1.7rem;
+        margin: 2rem;
+        text-align: center;
+        border: 2px solid;
+        padding: 1rem;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-family: "Poppins";
     }
     .tit-sticky {
         position: sticky;
         top: 0px;
-        background-color: var(--bs-body-bg);
+        background-color: white;
         width: 100%;
         max-width: 100%;
         padding: 10px 0;
@@ -628,7 +800,7 @@ on:mousemove={handleMousemove}>
         position: absolute;
         bottom: 0px;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #00000054;
         padding: 10px 20px 15px 20px;
         color: #fff;
         height: 25%;
@@ -643,13 +815,13 @@ on:mousemove={handleMousemove}>
     .txt-area,
     .txt-area:focus {
         width: 100%;
-        background-color: transparent;
-        border: 1px solid var(--bs-border-color);
+        background-color: #ffffff00;
+        border: 1px solid white;
         height: 20vh;
         outline: none;
-        caret-color: var(--bs-body-color);
+        caret-color: white;
         padding: 10px;
-        color: var(--bs-body-color);
+        color: #fff;
     }
     .table td,
     .table th {
@@ -665,33 +837,14 @@ on:mousemove={handleMousemove}>
         margin-bottom: 5vh;
     }
     .mailto {
-        color: var(--bs-body-color);
+        color: white;
         text-underline-offset: 7px;
     }
-    
-    .form-ins {
-        background-color: #f0f0f0; 
-        padding: 5vh 5vw;
+    @media screen and (max-width: 480px) {
+        .img-conf {
+            width: 70%;
+            margin-bottom: 5vh;
+        }
+           
     }
-
-    .cool {
-        color: var(--bs-body-color);
-        background-color: #fff;
-        border: 1px solid var(--bs-border-color);
-    }
-
-    .submit-ceacp {
-        background-color: var(--bs-primary);
-        color: #fff;
-        border: 1px solid var(--bs-primary);
-    }
-
-    #inputPreview {
-        border: solid 2px var(--bs-body-color);
-    }
-
-    .css-checkbox:checked + label {
-        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdxJybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzIiCiAgIHZpZXdCb3g9IjAgMCAxMi4zMDIgMTIuMzAyIgogICBoZWlnaHQ9IjEyLjMwMiIKICAgd2lkdGg9IjEyLjMwMiI+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMTQiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMxMiIgLz4KICA8cGF0aCAgICAgZD0iTSAxMS40NjUgMS44MjIgQyAxMS4xMzIgMS40ODkgMTAuNjA5IDEuNDg5IDEwLjI3NSAxLjgyMiBMIDQuNTUgNy41NDcgTCAyLjAzMSA1MDIgQyAxLjY5OCA0LjY2OSAxLjE3NSA0LjY2OSAwLjg0MiA1LjAwMyBDIDAuNTA4IDUuMzM3IDAuNTA4IDUuODU5IDAuODQyIDYuMTkzIEwgMy4zOTMgOC43NDMgQyAzLjcyNyA5LjA3NyA0LjI1IDkuMDc3IDQuNTg0IDguNzQzIEwgMTEuNDY1IDEuODI4MiIgCiAgICAgc3R5bGU9ImZpbGw6IzAwMzM2NjtmaWxsLW9wYWNpdHk6MSIKICAgaWQ9InBhdGg0IiAvPgo8L3N2Zz4K");
-    }
-
 </style>

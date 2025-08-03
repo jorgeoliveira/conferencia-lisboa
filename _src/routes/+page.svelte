@@ -596,7 +596,7 @@ on:mousemove={handleMousemove}>
 
 <style>
     .wrapper {
-        
+        background-color: var(--bs-body-bg);
         color: var(--bs-body-color);
         overflow: hidden;
     }
