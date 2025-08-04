@@ -144,7 +144,7 @@ on:mousemove={handleMousemove}>
                 style="margin-top: 5vh;padding-right: 9vw!important;"
             >
                 <Countdown
-                    targetDate={new Date("2025-10-01T10:00:00").getTime()}
+                    targetDate={new Date("2025-09-24T10:00:00").getTime()}
                 />
             </div>
         </div>
@@ -218,8 +218,8 @@ on:mousemove={handleMousemove}>
                                padding: 2vh 0;"
                                     />
                                 </div>
-                                <div class="col-8 p-0 m-0">
-                                    <p class="p-calendar">Dia 1 de Outubro</p>
+                               <div class="col-8 p-0 m-0">
+                                    <p class="p-calendar">Dia 24 de Setembro</p>
                                     <p class="p-calendar">das 10h às 13h</p>
                                 </div>
                                 <div class="col-12 p-0 m-0">
@@ -230,7 +230,7 @@ on:mousemove={handleMousemove}>
                                         class="p-calendar pt-3"
                                         style="text-transform: uppercase; font-weight: 500; font-size: 13px;"
                                     >
-                                        Local: Porto
+                                        Local: Lisboa
                                     </p>
                                     <div
                                         style="width:100%; height:2px;background-color: #999;margin-top: 2vh;"
@@ -276,6 +276,7 @@ on:mousemove={handleMousemove}>
                                                     src="/cangalho-1.png"
                                                     class="img-conf-1"
                                                     alt="parceiro cangalho"
+                                                    style="filter: invert(1);"
                                                 />
                                             </a>
                                             <a
