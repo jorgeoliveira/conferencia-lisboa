@@ -6,29 +6,29 @@
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
 
-// Porto-inspired Theme
-$porto-blue: #003366; // A deep blue like the azulejo tiles
-$porto-gold: #D4AF37; // A rich gold/ochre
-$porto-cream: #FDFBF5; // A warm off-white for the background
-$porto-dark-text: #1d1d1d; // Dark text for readability
+// Lisbon-inspired Theme
+$lisbon-blue: #0077B6; // A vibrant blue from Lisbon's tiles
+$lisbon-terracotta: #E77D22; // A warm terracotta from the rooftops
+$lisbon-cream: #F5F5DC; // A sandy beige for the background
+$lisbon-dark-text: #333333; // A dark grey for readability
 
 // Override Bootstrap Variables
-$dark: $porto-cream;
-$light: $porto-dark-text;
+$dark: $lisbon-cream;
+$light: $lisbon-dark-text;
 $form-color: #f8f9fa;
 
-$primary: $porto-blue;
-$secondary: $porto-gold;
+$primary: $lisbon-blue;
+$secondary: $lisbon-terracotta;
 
 $font-family-sans-serif: "Poppins", sans-serif;
 $font-family-serif: "Playfair Display", serif;
 $font-family-base: var(--bs-font-sans-serif);
 $headings-font-family: "Playfair Display", serif;
 
-$body-bg: $porto-cream;
-$body-color: $porto-dark-text;
-$link-color: $porto-blue;
-$link-hover-color: darken($porto-blue, 10%);
+$body-bg: $lisbon-cream;
+$body-color: $lisbon-dark-text;
+$link-color: $lisbon-blue;
+$link-hover-color: darken($lisbon-blue, 10%);
 
 $h1-font-size: 5rem;
 $h2-font-size: 2.5rem;

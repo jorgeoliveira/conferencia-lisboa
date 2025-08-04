@@ -660,23 +660,23 @@ on:mousemove={handleMousemove}>
     }
 
     .form-ins {
-        background-color: #f0f0f0;
+        background-color: #eeeeee;
         padding: 5vh 5vw;
     }
 
     .cool {
-        color: var(--bs-body-color);
-        background-color: #f0f0f0;
-        border: 1px solid #000000;
+        color: var(--text-dark);
+        background-color: #eeeeee;
+        border: 1px solid #cccccc;
     }
 
     .submit-ceacp {
-        color: black;
-        border: 1px solid black;
+        color: var(--text-dark);
+        border: 1px solid var(--text-dark);
     }
 
     #inputPreview {
-        border: solid 1px var(--bs-body-color);
+        border: solid 1px var(--text-dark);
     }
 
     .css-checkbox:checked + label {
