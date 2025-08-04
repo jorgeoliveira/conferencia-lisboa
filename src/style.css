@@ -268,7 +268,7 @@ select:-webkit-autofill:focus {
 
 .submit-ceacp:hover {
     background-color: var(--primary-gold);
-    color: var(--dark-bg);
+    color: white!important;
 }
 
 .bg-pattern {
