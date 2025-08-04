@@ -404,4 +404,10 @@ html.lenis {
         max-width: unset;
         width: 100%;
     }
+
+    label, .active {
+
+        font-size: 14px;
+
+    }
 }
