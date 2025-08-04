@@ -95,8 +95,8 @@
         font-size: 14px;
         line-height: 18px;
         font-weight: 700;
-        color: #000;
-        background: linear-gradient(rgb(242, 242, 242), rgb(255 255 255 / 0%));
+        color: black;
+        background: linear-gradient(rgb(170 170 170), rgb(97 97 97 / 0%));
         padding: 25px;
     }
 </style>

@@ -1,12 +1,14 @@
-
 :root {
     --form-color: #f9f9f9;
-    --accent-color: #0D3B66; /* Azul escuro inspirado no Porto */
+    --accent-color: #0D3B66;
+    /* Azul escuro inspirado no Porto */
     --text-dark: #222222;
     --bg-light: #ffffff;
     --dark-bg: #ffffff;
     --light-text: #222222;
-    --primary-gold: #765e3cd9;; /* Dourado suave */
+    --primary-gold: #765e3cd9;
+    ;
+    /* Dourado suave */
 }
 
 
@@ -119,13 +121,14 @@ header {
 }
 
 .hero {
-    color: var(--text-dark);
+    color: black;
     margin: 50px 0 25px 0;
-    background-color:#ffffff7a;
+    background-color: #00000024;
     padding: 25px;
     font-weight: 300;
     border: 1px solid #d4af37;
     border-radius: 5px;
+
 }
 
 video {
@@ -214,6 +217,7 @@ select:-webkit-autofill:focus {
     display: flex;
     gap: 20px;
     justify-content: left;
+    height: 32px;
 }
 
 .css-checkbox+label {
@@ -382,7 +386,7 @@ html.lenis {
         line-height: 24px;
         font-weight: 500;
         color: var(--text-dark);
-        background: linear-gradient(rgba(40, 40, 40, 0.8), rgba(255, 255, 255, 0));
+        background: linear-gradient(rgb(75 75 75 / 87%), rgb(58 52 52 / 30%));
         padding: 18px !important;
     }
 
