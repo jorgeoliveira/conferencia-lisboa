@@ -21,6 +21,7 @@
     let org = "";
     let formfreq = "";
     let recaptchaResponse = "";
+    let tematica = "Os desafios das compras públicas, em especial o planeamento (lisboa)";
     let map;
     let mapContainer;
 
@@ -69,8 +70,11 @@
         const formData = new FormData(formElement);
 
         formData.append("recaptchaResponse", recaptchaResponse);
-        const formfreq = "";
+        const formfreq = document.getElementById("demo_opt_1").checked
+            ? "Sim"
+            : "Não";
         formData.append("formfreq", formfreq);
+        formData.append("tematica", tematica);
         try {
             const response = await fetch(
                 "https://conferenciaapi.cangalho.pt/",
@@ -93,7 +97,7 @@
                     const rowForm = (document.getElementById(
                         "row-form",
                     ).innerHTML =
-                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a reserva, caso nao receba, contacte <br>sv@ceacp-ciacademy-cangalho.com</p>' +
+                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a reserva, caso nao receba, contacte <br>sc@ceacp-cia-cangalho.com</p>' +
                         "</div></div>");
                 } else if (
                     data.status == "error01" ||
@@ -103,8 +107,7 @@
                         "row-form",
                     ).innerHTML =
                         '<div class="row"><div class="col-12"><h5>Ocorreu um erro</h5><p>Por favor volte a re-carregar a página e tente de novo!</p>' +
-                        "</div></div>" +
-                        data.message);
+                        "</div></div>");
                 }
                 console.log(data.status);
             } else {
@@ -418,22 +421,21 @@ on:mousemove={handleMousemove}>
         </div>
     </div>
 
-    <section class="form-ins">
+ <section class="form-ins">
         <div class="row max-500">
             <div class="row m-0 p-0">
-                <div class="col-12">
+                <div class="col-12 text-intro">
                     <h1
-                        class=" text-intro"
+                        class=" "
                         style="
             margin-bottom:5vh;  margin-top:20vh;"
                     >
                         Formulário de inscrição
                     </h1>
-                </div>
-                <div class="col-12" style="margin: 0vh 0 5vh 0;">
-                    <p class=" text-intro">
-                        Junte-se a nós para debater os desafios e o futuro da
-                        contratação pública.
+
+                    <p>Junte-se a nós!</p>
+                    <p>
+                        Conferência 2025: Os desafios das compras públicas, em especial o planeamento (Lisboa)
                     </p>
                 </div>
             </div>

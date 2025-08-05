@@ -178,7 +178,7 @@ input[type=text] {
     border: 1px solid #ccc;
     font-size: 16px;
     background-color: #f2f2f2;
-    color: var(--text-dark);
+    color: var(--text-dark)!important;
 }
 
 input[type=text]:focus {
@@ -196,7 +196,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: 1px solid #fff;
-    -webkit-text-fill-color: #fff;
+    -webkit-text-fill-color:var(--text-dark)!important;
     -webkit-box-shadow: 0 0 0px 1000px var(--form-color) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
