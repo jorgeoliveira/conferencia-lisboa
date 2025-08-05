@@ -154,7 +154,7 @@ on:mousemove={handleMousemove}>
     </div>
     <section
         class="d-flex justify-content-center align-items-center text-hero"
-        style="height:70vh;"
+        style="min-height:70vh;"
     >
         <div
             id="hero"
