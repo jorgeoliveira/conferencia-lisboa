@@ -21,7 +21,7 @@
     let org = "";
     let formfreq = "";
     let recaptchaResponse = "";
-    let tematica = "Os desafios das compras públicas, em especial o planeamento (lisboa)";
+    let tematica = "Os desafios das compras públicas, em especial o planeamento (Lisboa)";
     let map;
     let mapContainer;
 
