@@ -554,7 +554,7 @@ on:mousemove={handleMousemove}>
                                 />
                                 <label for="demo_opt_1"></label>
                             </div>
-                            <div style="margin-left:15px;">
+                            <div class=" d-flex align-items-center" style="margin-left:15px;">
                                 Li e tomei conhecimento das condições de
                                 tratamento dos meus dados pessoais
                             </div>
