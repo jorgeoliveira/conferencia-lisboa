@@ -179,9 +179,9 @@ on:mousemove={handleMousemove}>
                         (Presencial)<br />
                     </p>
                     <span style="font-size: 1.7rem;line-height:120%;"
-                        >OS DESAFIOS DAS COMPRAS PÚBLICAS EM ESPECIAL O
-                        PLANEAMENTO</span
+                        >PLANEAMENTO DE COMPRAS PÚBLICAS: A CHAVE DO SUCESSO</span
                     >
+                    <p>Como o planeamento gera melhores decisões e resultados</p>
                 </h1>
             </div>
             <div
@@ -302,8 +302,7 @@ on:mousemove={handleMousemove}>
                     <div class="card border-0">
                         <div class="card-body">
                             <h5 class="title-text">
-                                CONFERÊNCIA 2025: OS DESAFIOS DAS COMPRAS
-                                PÚBLICAS, EM ESPECIAL O PLANEAMENTO
+                                CONFERÊNCIA 2025: Planeamento de Compras Públicas: a chave do sucesso
                             </h5>
                             <p>
                                 A contratação pública é um pilar fundamental da
