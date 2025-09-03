@@ -1,12 +1,12 @@
 :root {
     --form-color: #f5f5f5;
-    --accent-color: #008080; 
+    --accent-color: #008080;
     /* Teal */
     --text-dark: #333333;
     --bg-light: #fafafa;
     --dark-bg: #fafafa;
     --light-text: #333333;
-    --primary-gold: #b29a6f; 
+    --primary-gold: #b29a6f;
     /* Muted Gold */
 }
 
@@ -99,8 +99,12 @@ header {
 
 .logo {
     padding-left: 6vw;
-    margin: 5vh 0 2vh 0;
+    margin: 10vh 0 2vh 0;
+}
+
+.logo-mobile {
     display: none;
+    /* Hidden by default */
 }
 
 .p-calendar {
@@ -178,7 +182,7 @@ input[type=text] {
     border: 1px solid #ccc;
     font-size: 16px;
     background-color: #f2f2f2;
-    color: var(--text-dark)!important;
+    color: var(--text-dark) !important;
 }
 
 input[type=text]:focus {
@@ -196,7 +200,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: 1px solid #fff;
-    -webkit-text-fill-color:var(--text-dark)!important;
+    -webkit-text-fill-color: var(--text-dark) !important;
     -webkit-box-shadow: 0 0 0px 1000px var(--form-color) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
@@ -267,7 +271,7 @@ select:-webkit-autofill:focus {
 
 .submit-ceacp:hover {
     background-color: var(--primary-gold);
-    color: white!important;
+    color: white !important;
 }
 
 .bg-pattern {
@@ -403,9 +407,110 @@ html.lenis {
         width: 100%;
     }
 
-    label, .active {
+    label,
+    .active {
 
         font-size: 14px;
 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: block;
+    }
+
+    .logo-main {
+        display: none;
+        /* Hide desktop logo on mobile */
+    }
+
+    .logo-mobile {
+        display: block;
+        /* Show mobile logo */
+        margin: 0 auto 20px;
+        /* Center and add space below */
+    }
+
+    .mobile-header-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Center countdown horizontally */
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .header {
+        padding: 10px;
+        position: sticky;
+        /* Make header sticky */
+        top: 0;
+        backdrop-filter: blur(5px);
+    }
+
+    .header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .col-sm-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .d-flex {
+        justify-content: center !important;
+        padding-right: 0 !important;
+        margin-top: 20px !important;
+    }
+
+    .countdown {
+        text-align: right;
+        /* Default to right-aligned for desktop */
+    }
+
+    /* Override the component's internal text-align on mobile */
+    /* This is now redundant and can be removed */
+    /* .countdown.text-align-right {
+        text-align: center;
+    } */
+
+    .desktop-countdown-col {
+        display: contents;
+        /* This makes the div not generate a box, so it doesn't take up space */
+    }
+
+    .no-mb {
+        display: none;
+        /* Hidden by default */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .countdown {
+        text-align: center;
+        /* Center on mobile */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .logo-main {
+        display: block;
+        /* Show desktop logo */
+    }
+
+    .logo-mobile {
+        display: none;
+        /* Hide mobile logo on desktop */
+    }
+
+    .desktop-countdown-col {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 5vh;
+        padding-right: 9vw !important;
     }
 }

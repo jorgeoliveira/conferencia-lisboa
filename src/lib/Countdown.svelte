@@ -41,7 +41,7 @@
   
 
 <div class=" row col-12 h-100">
-    <div class="countdown text-white text-align-right">
+    <div class="countdown text-white">
         <div class="timer">
             <div class="days">{addLeadingZero(days)}</div>
             <div class="textDays">DIAS</div>

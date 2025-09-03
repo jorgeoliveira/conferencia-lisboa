@@ -132,23 +132,29 @@ on:mousemove={handleMousemove}>
 <div class="wrapper">
     <div class="header">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 no-mb">
                 <div class="logo">
                     <!-- Your logo image or text goes here -->
                     <img
-                        src="logo_gold-2.png"
-                        style="width:150px;"
+                        src="ceacp-cia-new-black.png"
+                        class="logo-main"
+                        style="width:250px;"
                         alt="Logo"
                     />
                 </div>
             </div>
-            <div
-                class="col-sm-6 d-flex justify-content-end align-items-center"
-                style="margin-top: 5vh;padding-right: 9vw!important;"
-            >
-                <Countdown
-                    targetDate={new Date("2025-09-24T10:00:00").getTime()}
-                />
+            <div class="col-sm-6 desktop-countdown-col">
+                <div class="mobile-header-elements">
+                    <img
+                        src="ceacp-cia-new-black.png"
+                        class="logo-mobile"
+                        style="width:250px;"
+                        alt="Logo Mobile"
+                    />
+                    <Countdown
+                        targetDate={new Date("2025-09-24T10:00:00").getTime()}
+                    />
+                </div>
             </div>
         </div>
     </div>
