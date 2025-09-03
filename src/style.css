@@ -1,12 +1,12 @@
 :root {
     --form-color: #f5f5f5;
-    --accent-color: #008080; 
+    --accent-color: #008080;
     /* Teal */
     --text-dark: #333333;
     --bg-light: #fafafa;
     --dark-bg: #fafafa;
     --light-text: #333333;
-    --primary-gold: #b29a6f; 
+    --primary-gold: #b29a6f;
     /* Muted Gold */
 }
 
@@ -104,7 +104,8 @@ header {
 }
 
 .logo-mobile {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
 }
 
 .p-calendar {
@@ -130,7 +131,7 @@ header {
     padding: 25px;
     font-weight: 300;
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -182,7 +183,7 @@ input[type=text] {
     border: 1px solid #ccc;
     font-size: 16px;
     background-color: #f2f2f2;
-    color: var(--text-dark)!important;
+    color: var(--text-dark) !important;
 }
 
 input[type=text]:focus {
@@ -200,7 +201,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: 1px solid #fff;
-    -webkit-text-fill-color:var(--text-dark)!important;
+    -webkit-text-fill-color: var(--text-dark) !important;
     -webkit-box-shadow: 0 0 0px 1000px var(--form-color) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
@@ -271,7 +272,7 @@ select:-webkit-autofill:focus {
 
 .submit-ceacp:hover {
     background-color: var(--primary-gold);
-    color: white!important;
+    color: white !important;
 }
 
 .bg-pattern {
@@ -281,7 +282,7 @@ select:-webkit-autofill:focus {
 
 .card {
     background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border: none !important;
     color: var(--text-dark);
 }
@@ -361,101 +362,59 @@ html.lenis {
     pointer-events: none;
 }
 
-@media (min-width: 576px) and (max-width: 1024px) {
-
-    .container-sm,
-    .container {
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .title-text {
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-
-    .text-intro {
-        padding: 0px 3.4vw;
-    }
-
-    .section-2 {
-        clip-path: polygon(50% 0%, 100% 1%, 100% 100%, 0 100%, 0 1%);
-    }
-
-    .countdown .timer {
-        display: inline-block;
-        width: 70px !important;
-        font-size: 24px;
-        line-height: 24px;
-        font-weight: 500;
-        color: var(--text-dark);
-        background: linear-gradient(rgb(75 75 75 / 87%), rgb(58 52 52 / 30%));
-        padding: 18px !important;
-    }
-
-    .hero {
-        margin: 0px 0 25px 0;
-    }
-
-    .text-hero {
-        align-items: start !important;
-        margin-top: 50px;
-    }
-
-    .card-mobile {
-        max-width: unset;
-        width: 100%;
-    }
-
-    label, .active {
-
-        font-size: 14px;
-
-    }
-}
-
 .countdown {
-    text-align: right; /* Default to right-aligned for desktop */
+    text-align: right;
+    /* Default to right-aligned for desktop */
 }
-
-/* This is now redundant and can be removed */
-/* .countdown.text-align-right {
-    text-align: center;
-} */
 
 .desktop-countdown-col {
-    display: contents; /* This makes the div not generate a box, so it doesn't take up space */
+    display: contents;
+    /* This makes the div not generate a box, so it doesn't take up space */
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
 
+.header-desk-top {
+    padding-top: 20vh!important;
+}
+
+/* --- Mobile Styles --- */
 @media screen and (max-width: 768px) {
     .logo {
         display: block;
     }
+    .no-mb{
+        display: none;
+    }
+    .header-desk-top {
+        padding-top: 30vh!important;
+    }
 
     .logo-main {
-        display: none; /* Hide desktop logo on mobile */
+        display: none;
     }
 
     .logo-mobile {
-        display: block; /* Show mobile logo */
-        margin: 0 auto 20px; /* Center and add space below */
+        display: block;
+        margin: 0 auto 20px;
     }
 
     .mobile-header-elements {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Center countdown horizontally */
+        justify-content: center;
         width: 100%;
     }
 
     .header {
         padding: 10px;
-        position: sticky; /* Make header sticky */
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.9); /* Add a background */
+        margin-top: 5vh;
         backdrop-filter: blur(5px);
     }
 
@@ -476,17 +435,60 @@ html.lenis {
     }
 
     .countdown {
-        text-align: center; /* Center on mobile */
+        text-align: center;
+    }
+
+    .text-hero {
+        /* Override alignment for mobile to allow content to grow */
+        align-items: flex-start !important;
+        height: auto;
+        min-height: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .hero {
+        margin: 0 0 25px 0;
+    }
+
+    .card-mobile {
+        max-width: 100%;
+    }
+
+    label,
+    .active {
+        font-size: 14px;
+    }
+
+    .title-text {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .text-intro {
+        padding: 0px 3.4vw;
+    }
+
+    .section-2 {
+        clip-path: polygon(50% 0%, 100% 1%, 100% 100%, 0 100%, 0 1%);
+    }
+
+    .countdown .timer {
+        width: 70px !important;
+        font-size: 24px;
+        line-height: 24px;
+        padding: 18px !important;
     }
 }
 
+/* --- Desktop Styles --- */
 @media screen and (min-width: 769px) {
     .logo-main {
-        display: block; /* Show desktop logo */
+        display: block;
     }
 
     .logo-mobile {
-        display: none; /* Hide mobile logo on desktop */
+        display: none;
     }
 
     .desktop-countdown-col {
@@ -495,6 +497,11 @@ html.lenis {
         align-items: center;
         margin-top: 5vh;
         padding-right: 9vw !important;
+    }
+
+    .text-hero {
+        min-height: 70vh;
+        padding: 0;
     }
 }
 
@@ -512,6 +519,7 @@ html.lenis {
 }
 
 .cta-button:hover {
-    background-color: #c7b28a; /* A slightly darker gold */
+    background-color: #c7b28a;
+    /* A slightly darker gold */
     transform: translateY(-2px);
 }

@@ -136,7 +136,7 @@ on:mousemove={handleMousemove}>
                 <div class="logo">
                     <!-- Your logo image or text goes here -->
                     <img
-                        src="ceacp-cia-new-black.png"
+                        src="CAPACITAR PARA TRANSFORMAR.png"
                         class="logo-main"
                         style="width:250px;"
                         alt="Logo"
@@ -146,7 +146,7 @@ on:mousemove={handleMousemove}>
             <div class="col-sm-6 desktop-countdown-col">
                 <div class="mobile-header-elements">
                     <img
-                        src="ceacp-cia-new-black.png"
+                        src="CAPACITAR PARA TRANSFORMAR.png"
                         class="logo-mobile"
                         style="width:250px;"
                         alt="Logo Mobile"
@@ -159,14 +159,12 @@ on:mousemove={handleMousemove}>
         </div>
     </div>
     <section
-        class="d-flex justify-content-center align-items-center text-hero"
-        style="min-height:70vh;"
+        class="d-flex justify-content-center align-items-center text-hero header-desk-top"
     >
         <div
             id="hero"
             class="container row d-flex flex-column justify-content-center align-items-center"
-            style="text-align: center;position: sticky;
-        top: 20%;"
+            style="text-align: center;"
         >
             <div
                 class="col-12 col-md-12 col-lg-8 d-flex flex-column"
