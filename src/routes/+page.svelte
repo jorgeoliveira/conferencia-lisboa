@@ -189,6 +189,7 @@ on:mousemove={handleMousemove}>
                     >
                     <p>Como o planeamento gera melhores decisões e resultados</p>
                 </h1>
+                
             </div>
             <div
                 class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-cente m-0"
@@ -351,7 +352,7 @@ on:mousemove={handleMousemove}>
             </div>
 
             <div
-                class="container m-2 "
+                class="container mt-5 "
                 style="background-color: #f0f0f0;margin: 0 10px 0 10px; padding: 0 25px 25px 25px;"
             >
                 <div class="row">
@@ -426,7 +427,7 @@ on:mousemove={handleMousemove}>
         </div>
     </div>
 
- <section class="form-ins">
+ <section class="form-ins" id="form-section">
         <div class="row max-500">
             <div class="row m-0 p-0">
                 <div class="col-12 text-intro">

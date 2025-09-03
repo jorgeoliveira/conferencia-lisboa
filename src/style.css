@@ -1,12 +1,12 @@
 :root {
     --form-color: #f5f5f5;
-    --accent-color: #008080;
+    --accent-color: #008080; 
     /* Teal */
     --text-dark: #333333;
     --bg-light: #fafafa;
     --dark-bg: #fafafa;
     --light-text: #333333;
-    --primary-gold: #b29a6f;
+    --primary-gold: #b29a6f; 
     /* Muted Gold */
 }
 
@@ -18,6 +18,7 @@ body {
     color: var(--text-dark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 body::before {
@@ -103,8 +104,7 @@ header {
 }
 
 .logo-mobile {
-    display: none;
-    /* Hidden by default */
+    display: none; /* Hidden by default */
 }
 
 .p-calendar {
@@ -129,8 +129,8 @@ header {
     background-color: #00000024;
     padding: 25px;
     font-weight: 300;
-    border: 1px solid #d4af37;
     border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 
 }
 
@@ -182,7 +182,7 @@ input[type=text] {
     border: 1px solid #ccc;
     font-size: 16px;
     background-color: #f2f2f2;
-    color: var(--text-dark) !important;
+    color: var(--text-dark)!important;
 }
 
 input[type=text]:focus {
@@ -200,7 +200,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: 1px solid #fff;
-    -webkit-text-fill-color: var(--text-dark) !important;
+    -webkit-text-fill-color:var(--text-dark)!important;
     -webkit-box-shadow: 0 0 0px 1000px var(--form-color) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
@@ -271,7 +271,7 @@ select:-webkit-autofill:focus {
 
 .submit-ceacp:hover {
     background-color: var(--primary-gold);
-    color: white !important;
+    color: white!important;
 }
 
 .bg-pattern {
@@ -281,7 +281,8 @@ select:-webkit-autofill:focus {
 
 .card {
     background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: none !important;
     color: var(--text-dark);
 }
 
@@ -407,13 +408,26 @@ html.lenis {
         width: 100%;
     }
 
-    label,
-    .active {
+    label, .active {
 
         font-size: 14px;
 
     }
 }
+
+.countdown {
+    text-align: right; /* Default to right-aligned for desktop */
+}
+
+/* This is now redundant and can be removed */
+/* .countdown.text-align-right {
+    text-align: center;
+} */
+
+.desktop-countdown-col {
+    display: contents; /* This makes the div not generate a box, so it doesn't take up space */
+}
+
 
 @media screen and (max-width: 768px) {
     .logo {
@@ -421,32 +435,27 @@ html.lenis {
     }
 
     .logo-main {
-        display: none;
-        /* Hide desktop logo on mobile */
+        display: none; /* Hide desktop logo on mobile */
     }
 
     .logo-mobile {
-        display: block;
-        /* Show mobile logo */
-        margin: 0 auto 20px;
-        /* Center and add space below */
+        display: block; /* Show mobile logo */
+        margin: 0 auto 20px; /* Center and add space below */
     }
 
     .mobile-header-elements {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        /* Center countdown horizontally */
+        justify-content: center; /* Center countdown horizontally */
         width: 100%;
-        margin-top: 5vh;
     }
 
     .header {
         padding: 10px;
-        position: sticky;
-        /* Make header sticky */
+        position: sticky; /* Make header sticky */
         top: 0;
+        background-color: rgba(255, 255, 255, 0.9); /* Add a background */
         backdrop-filter: blur(5px);
     }
 
@@ -467,43 +476,17 @@ html.lenis {
     }
 
     .countdown {
-        text-align: right;
-        /* Default to right-aligned for desktop */
-    }
-
-    /* Override the component's internal text-align on mobile */
-    /* This is now redundant and can be removed */
-    /* .countdown.text-align-right {
-        text-align: center;
-    } */
-
-    .desktop-countdown-col {
-        display: contents;
-        /* This makes the div not generate a box, so it doesn't take up space */
-    }
-
-    .no-mb {
-        display: none;
-        /* Hidden by default */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .countdown {
-        text-align: center;
-        /* Center on mobile */
+        text-align: center; /* Center on mobile */
     }
 }
 
 @media screen and (min-width: 769px) {
     .logo-main {
-        display: block;
-        /* Show desktop logo */
+        display: block; /* Show desktop logo */
     }
 
     .logo-mobile {
-        display: none;
-        /* Hide mobile logo on desktop */
+        display: none; /* Hide mobile logo on desktop */
     }
 
     .desktop-countdown-col {
@@ -513,4 +496,22 @@ html.lenis {
         margin-top: 5vh;
         padding-right: 9vw !important;
     }
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-gold);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c7b28a; /* A slightly darker gold */
+    transform: translateY(-2px);
 }
