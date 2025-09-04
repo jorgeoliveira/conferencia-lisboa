@@ -351,7 +351,7 @@ on:mousemove={handleMousemove}>
 
             <div
                 class="container mt-5 "
-                style="background-color: #f0f0f0;margin: 0 10px 0 10px; padding: 0 25px 25px 25px;"
+                style="background-color: #f0f0f0; padding: 0 25px 25px 25px;"
             >
                 <div class="row">
                     <div class="col-12 p-0">
