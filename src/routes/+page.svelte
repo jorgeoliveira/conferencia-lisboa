@@ -192,7 +192,7 @@ on:mousemove={handleMousemove}>
             <div
                 class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-cente m-0"
             >
-                <p class="hero" style="width:100%;">
+                <p class="hero" style="width:100%;padding: 0 30px;">
                     Numa organização conjunta<br />
                     <strong>Cangalho</strong><br />
                     <strong style="white-space:nowrap;">CIAcademy®</strong>
