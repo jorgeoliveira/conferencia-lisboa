@@ -509,7 +509,7 @@ on:mousemove={handleMousemove}>
                         <div class="card border-0 rounded-0">
                             <div class="position-relative">
                                 <img
-                                    src="https://www.ceacp-ciacademy.pt/wp-content/uploads/2023/08/pm-209x300.jpg"
+                                    src="./pm-16-9.png"
                                     class="card-img-top img-filter rounded-0"
                                     alt="Paulo Madeira"
                                 />
@@ -632,7 +632,7 @@ on:mousemove={handleMousemove}>
                         >
                             <div class="position-relative">
                                 <img
-                                    src="./fb-1.jpg"
+                                    src="./fern.jpg"
                                     class="card-img-top img-filter rounded-0"
                                     alt="Carlos José Batalhão "
                                     style="filter: brightness(0.8);"
