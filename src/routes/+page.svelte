@@ -475,7 +475,7 @@ on:mousemove={handleMousemove}>
                                     </tr>
                                     <tr>
                                         <th scope="row">17h00</th>
-                                        <td> Coffee-break e encerramento </td>
+                                        <td> Encerramento </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -545,8 +545,8 @@ on:mousemove={handleMousemove}>
                             <br /><br />
                             É também o autor do livro
                             <em
-                                >"Guia Prático - Planeamento de Compras
-                                Públicas"</em
+                                ><b>"Guia Prático - Planeamento de Compras
+                                Públicas"</b></em
                             >, uma obra de referência no setor.
                             <br /><br />
                             Tem desempenhado funções de consultoria em vários organismos
