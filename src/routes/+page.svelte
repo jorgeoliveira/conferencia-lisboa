@@ -34,7 +34,7 @@
         //m.y = event.clientY - 90;
     }
 
-    let logoSrc = "ceacp-cia-new-white.png";
+    let logoSrc = "ceacp-cia-slogan-white.png";
 
     onMount(() => {
         function handleScroll() {
