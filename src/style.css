@@ -99,13 +99,15 @@ header {
 }
 
 .logo {
-    padding-left: 6vw;
+    margin-left: 6vw!important;
     margin: 10vh 0 2vh 0;
+      transition: all 0.5s ease;
 }
 
 .logo-mobile {
     display: none;
     /* Hidden by default */
+      transition: all 0.5s ease;
 }
 
 .p-calendar {
@@ -478,6 +480,9 @@ html.lenis {
         font-size: 24px;
         line-height: 24px;
         padding: 18px !important;
+    }
+    .logo-container {
+        margin-bottom: 20px;
     }
 }
 

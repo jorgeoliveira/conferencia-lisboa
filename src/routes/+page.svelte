@@ -34,18 +34,14 @@
         //m.y = event.clientY - 90;
     }
 
-    let logoSrc = "ceacp-cia-slogan-white.png";
+    let showWhiteLogo = true;
 
     onMount(() => {
         function handleScroll() {
             const section2 = document.querySelector(".section-2");
             if (section2) {
                 const section2Top = section2.getBoundingClientRect().top;
-                if (section2Top <= 100) {
-                    logoSrc = "CAPACITAR PARA TRANSFORMAR.png";
-                } else {
-                    logoSrc = "ceacp-cia-slogan-white.png";
-                }
+                showWhiteLogo = section2Top > 100;
             }
         }
 
@@ -155,24 +151,55 @@ on:mousemove={handleMousemove}>
     <div class="header">
         <div class="row">
             <div class="col-sm-6 no-mb">
-                <div class="logo">
-                    <!-- Your logo image or text goes here -->
+                <div class="logo logo-container">
+                    <!-- Sizing image (keeps container dimensions) -->
                     <img
-                        src={logoSrc}
-                        class="logo-main"
-                        style="width:250px;"
-                        alt="Logo"
+                        src="CAPACITAR PARA TRANSFORMAR.png"
+                        alt=""
+                        style="visibility: hidden; width: 250px;"
                     />
+                    <!-- Fading images -->
+                    <div class="fading-logo-wrapper">
+                        <img
+                            src="ceacp-cia-slogan-white.png"
+                            class="logo-main"
+                            class:visible={showWhiteLogo}
+                            alt="Logo White"
+                        />
+                        <img
+                            src="CAPACITAR PARA TRANSFORMAR.png"
+                            class="logo-main"
+                            class:visible={!showWhiteLogo}
+                            alt="Logo Color"
+                        />
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6 desktop-countdown-col">
                 <div class="mobile-header-elements">
-                    <img
-                        src={logoSrc}
-                        class="logo-mobile"
-                        style="width:250px;"
-                        alt="Logo Mobile"
-                    />
+                    <div class="logo-container">
+                        <!-- Sizing image -->
+                        <img
+                            src="CAPACITAR PARA TRANSFORMAR.png"
+                            alt=""
+                            style="visibility: hidden; width: 250px;"
+                        />
+                        <!-- Fading images -->
+                        <div class="fading-logo-wrapper">
+                            <img
+                                src="ceacp-cia-slogan-white.png"
+                                class="logo-mobile"
+                                class:visible={showWhiteLogo}
+                                alt="Logo Mobile White"
+                            />
+                            <img
+                                src="CAPACITAR PARA TRANSFORMAR.png"
+                                class="logo-mobile"
+                                class:visible={!showWhiteLogo}
+                                alt="Logo Mobile Color"
+                            />
+                        </div>
+                    </div>
                     <Countdown
                         targetDate={new Date("2025-10-30T10:00:00").getTime()}
                     />
@@ -657,7 +684,7 @@ on:mousemove={handleMousemove}>
 
     <section class="form-ins" id="form-section">
         <div class="row max-500">
-            <div class="row m-0 p-0">
+            
                 <div class="col-12 text-intro">
                     <h1
                         class=" "
@@ -738,7 +765,7 @@ on:mousemove={handleMousemove}>
                         </ul>
                     </div>
                 </div>
-            </div>
+             
             <div id="row-form" class="col-12 form-field">
                 <form
                     id="registrationForm"
@@ -891,6 +918,29 @@ on:mousemove={handleMousemove}>
 {/if}
 
 <style>
+    .logo-container {
+        position: relative;
+        display: inline-block; /* This makes the container behave like an image for layout purposes */
+        /* The container is now sized by the invisible image inside it */
+    }
+    .fading-logo-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .logo-main, .logo-mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .logo-main.visible, .logo-mobile.visible {
+        opacity: 1;
+    }
     .wrapper {
         color: var(--bs-body-color);
         overflow: hidden;
