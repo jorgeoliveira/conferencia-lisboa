@@ -21,7 +21,8 @@
     let org = "";
     let formfreq = "";
     let recaptchaResponse = "";
-    let tematica = "Os desafios das compras públicas, em especial o planeamento (Lisboa)";
+    let tematica =
+        "Os desafios das compras públicas, em especial o planeamento (Lisboa)";
     let map;
     let mapContainer;
 
@@ -33,7 +34,23 @@
         //m.y = event.clientY - 90;
     }
 
+    let logoSrc = "ceacp-cia-new-white.png";
+
     onMount(() => {
+        function handleScroll() {
+            const section2 = document.querySelector(".section-2");
+            if (section2) {
+                const section2Top = section2.getBoundingClientRect().top;
+                if (section2Top <= 100) {
+                    logoSrc = "CAPACITAR PARA TRANSFORMAR.png";
+                } else {
+                    logoSrc = "ceacp-cia-slogan-white.png";
+                }
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
         grecaptcha.ready(() => {
             grecaptcha
                 .execute("6LfwFSMpAAAAABX_XBgRUsB26EBYotsSZASIQYSF", {
@@ -60,10 +77,15 @@
                     }
                 });
             });
+        
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
     });
 
     onDestroy(() => {
-        //map.remove();
+        // Any other cleanup can go here.
+        // The scroll listener is already cleaned up by the return function in onMount.
     });
     const handleSubmit = async () => {
         const formElement = document.getElementById("registrationForm");
@@ -136,7 +158,7 @@ on:mousemove={handleMousemove}>
                 <div class="logo">
                     <!-- Your logo image or text goes here -->
                     <img
-                        src="CAPACITAR PARA TRANSFORMAR.png"
+                        src={logoSrc}
                         class="logo-main"
                         style="width:250px;"
                         alt="Logo"
@@ -152,7 +174,7 @@ on:mousemove={handleMousemove}>
                         alt="Logo Mobile"
                     />
                     <Countdown
-                        targetDate={new Date("2025-09-24T10:00:00").getTime()}
+                        targetDate={new Date("2025-10-30T10:00:00").getTime()}
                     />
                 </div>
             </div>
@@ -182,20 +204,30 @@ on:mousemove={handleMousemove}>
                     <p style="font-size: 0.6rem;line-height:120%;">
                         (Presencial)<br />
                     </p>
-                    <span style="font-size: 1.7rem;line-height:120%;"
-                        >PLANEAMENTO DE COMPRAS PÚBLICAS: A CHAVE DO SUCESSO</span
+                    <span
+                        style="font-size: 1.7rem;line-height:120%;text-transform: uppercase;"
+                        >Planear as Compras Públicas e evitar ilegalidades</span
                     >
-                    <p>Como o planeamento gera melhores decisões e resultados</p>
+                    <p>
+                        Como o planeamento gera melhores decisões e resultados
+                        no setor público
+                    </p>
                 </h1>
-                
             </div>
             <div
-                class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-cente m-0"
+                class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-center m-0"
             >
-                <p class="hero" style="width:100%;padding: 0 30px;">
+                <p
+                    class="hero"
+                    style="width:380px;padding:  30px;
+    margin: 0px 19px;
+    margin-bottom: 50px;font-size:1rem;"
+                >
                     Numa organização conjunta<br />
-                    <strong>Cangalho</strong><br />
-                    <strong style="white-space:nowrap;">CIAcademy®</strong>
+                    <strong>CEACP / CIAcademy®</strong><br />
+                    <strong style="white-space:nowrap;">CANGALHO,</strong>
+                    <strong style="white-space:nowrap;">AAFDL,</strong>
+                    <strong style="white-space:nowrap;">DOWER</strong>
                 </p>
             </div>
         </div>
@@ -226,9 +258,9 @@ on:mousemove={handleMousemove}>
                                padding: 2vh 0;"
                                     />
                                 </div>
-                               <div class="col-8 p-0 m-0">
-                                    <p class="p-calendar">Dia 24 de Setembro</p>
-                                    <p class="p-calendar">das 10h às 13h</p>
+                                <div class="col-8 p-0 m-0">
+                                    <p class="p-calendar">Dia 30 de Outubro</p>
+                                    <p class="p-calendar">das 14h30 às 17h</p>
                                 </div>
                                 <div class="col-12 p-0 m-0">
                                     <div
@@ -284,14 +316,21 @@ on:mousemove={handleMousemove}>
                                                     src="/cangalho-1.png"
                                                     class="img-conf-1"
                                                     alt="parceiro cangalho"
-                                                    style="filter: invert(1);"
+                                                    style="filter: invert(1);width: 80%;"
                                                 />
                                             </a>
-                                            <a
-                                                href="https://www.cia-academy.com/"
-                                            >
+
+                                            <a href="https://www.dower.pt/">
                                                 <img
-                                                    src="/cia-acad.png"
+                                                    src="/dower-logo.jpeg"
+                                                    class="img-conf"
+                                                    alt="parceiro cangalho"
+                                                />
+                                            </a>
+
+                                            <a href="https://aafdl.pt/">
+                                                <img
+                                                    src="/aafdl.jpeg"
                                                     class="img-conf"
                                                     alt="parceiro cangalho"
                                                 />
@@ -307,7 +346,8 @@ on:mousemove={handleMousemove}>
                     <div class="card border-0">
                         <div class="card-body">
                             <h5 class="title-text">
-                                CONFERÊNCIA 2025: Planeamento de Compras Públicas: a chave do sucesso
+                                CONFERÊNCIA 2025: Planeamento de Compras
+                                Públicas: a chave do sucesso
                             </h5>
                             <p>
                                 A contratação pública é um pilar fundamental da
@@ -345,13 +385,84 @@ on:mousemove={handleMousemove}>
                                 Portugal.
                             </p>
                         </div>
+                        <div class="table-div">
+                            <h5 class="title-text tit-sticky">Programa</h5>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">14h30</th>
+                                        <td> Receção participantes </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15h00</th>
+                                        <td>
+                                            Sessão de Abertura<br />
+                                            <b>João Pedro Freitas</b> –
+                                            Tesoureiro da <b>AAFDL Editora</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15h10</th>
+                                        <td>
+                                            A importância do planeamento de
+                                            compras públicas para evitar
+                                            ilegalidades<br />
+                                            <b>Carlos José Batalhão</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15h30</th>
+                                        <td>
+                                            Compras sustentáveis e planeamento
+                                            de compras públicas<br />
+                                            <b>Pedro Santos Azevedo</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15h50</th>
+                                        <td> Coffee-break </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16h10</th>
+                                        <td>
+                                            Estratégia Europeia para a
+                                            contratação pública e o papel do
+                                            planeamento de compras públicas<br
+                                            />
+                                            <b>Fernando Batista</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16h30</th>
+                                        <td>
+                                            Breves notas “Porque falham as
+                                            entidades adjudicantes no
+                                            Planeamento de Compras Públicas”<br
+                                            />
+                                            <b>Paulo Madeira</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16h50</th>
+                                        <td> Debate </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">17h00</th>
+                                        <td> Coffee-break e encerramento </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div
-                class="container mt-5 "
-                style="background-color: #f0f0f0; padding: 0 25px 25px 25px;"
+                class="container mt-5"
+                style="background-color: #f0f0f0;margin: 0 0px 0 0px; padding: 0 25px 25px 25px;background-color: #f0f0f09c;
+    box-shadow: 0 4px 12px #00000014;
+    border: none !important;border-radius: 5px;padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);"
             >
                 <div class="row">
                     <div class="col-12 p-0">
@@ -364,6 +475,7 @@ on:mousemove={handleMousemove}>
                 <!-- Flex row para ≥ md, empilhado abaixo -->
                 <div
                     class="d-flex flex-column flex-md-row align-items-start gap-4"
+                    style="padding: 10px;"
                 >
                     <!-- Coluna 1: Card limitado a 280px -->
                     <div class="flex-shrink-0 card-mobile" style="">
@@ -388,7 +500,7 @@ on:mousemove={handleMousemove}>
                                     Autor do livro <strong
                                         >"Guia Prático - Planeamento de Compras
                                         Públicas"</strong
-                                    >
+                                    >, SG do Governo
                                 </p>
                             </div>
                         </div>
@@ -421,11 +533,129 @@ on:mousemove={handleMousemove}>
                         </p>
                     </div>
                 </div>
+                <div class="row d-flex flex-wrap">
+                    <div class="col-md-12">
+                        <h1
+                            style="margin:50px 0 50px 0;position:relative;"
+                        ></h1>
+                    </div>
+
+                    <!--- novos -->
+
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div
+                            class="card border-0 rounded-0 mb-5"
+                            style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
+                        >
+                            <div class="position-relative">
+                                <img
+                                    src="./blank.jpg"
+                                    class="card-img-top img-filter rounded-0"
+                                    alt="Pedro Neves de Sousa"
+                                    style="filter: brightness(0.5);"
+                                />
+                                <div class="cut-card">
+                                    <h5
+                                        class="card-title"
+                                        style="text-shadow: 2px 4px 0 #000000;"
+                                    >
+                                        João Pedro Freitas
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text cargo-desc">
+                                    Receção <strong>Moderação</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div
+                            class="card border-0 rounded-0 mb-5"
+                            style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
+                        >
+                            <div class="position-relative">
+                                <img
+                                    src="./CarlosJB.jpeg"
+                                    class="card-img-top img-filter rounded-0"
+                                    alt="Carlos José Batalhão "
+                                />
+                                <div class="cut-card">
+                                    <h5
+                                        class="card-title"
+                                        style="text-shadow: 2px 4px 0 #000000;"
+                                    >
+                                        Carlos José Batalhão
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text cargo-desc">
+                                    Orador | <strong>Dower</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div
+                            class="card border-0 rounded-0 mb-5"
+                            style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
+                        >
+                            <div class="position-relative">
+                                <img
+                                    src="./fb-1.jpg"
+                                    class="card-img-top img-filter rounded-0"
+                                    alt="Carlos José Batalhão "
+                                    style="filter: brightness(0.8);"
+                                />
+                                <div class="cut-card">
+                                    <h5
+                                        class="card-title"
+                                        style="text-shadow: 2px 4px 0 #000000;"
+                                    >
+                                        Fernando Batista
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text cargo-desc">Orador</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+                        <div
+                            class="card border-0 rounded-0 mb-5"
+                            style="background: linear-gradient(to bottom, #f2f2f2, #ffffff);"
+                        >
+                            <div class="position-relative">
+                                <img
+                                    src="./blank.jpg"
+                                    class="card-img-top img-filter rounded-0"
+                                    alt="Carlos José Batalhão "
+                                    style="filter: brightness(0.5);"
+                                />
+                                <div class="cut-card">
+                                    <h5
+                                        class="card-title"
+                                        style="text-shadow: 2px 4px 0 #000000;"
+                                    >
+                                        Pedro Santos Azevedo
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text cargo-desc">Orador</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
- <section class="form-ins" id="form-section">
+    <section class="form-ins" id="form-section">
         <div class="row max-500">
             <div class="row m-0 p-0">
                 <div class="col-12 text-intro">
@@ -437,10 +667,76 @@ on:mousemove={handleMousemove}>
                         Formulário de inscrição
                     </h1>
 
-                    <p>Junte-se a nós!</p>
-                    <p>
-                        Conferência 2025: Os desafios das compras públicas, em especial o planeamento (Lisboa)
-                    </p>
+                    <div
+                        class="inscricao-info"
+                        style="text-align: left; margin-top: 2rem; padding: 20px;"
+                    >
+                        <p>Junte-se a nós!</p>
+                        <p>
+                            Conferência 2025: Os desafios das compras públicas,
+                            em especial o planeamento (Lisboa)
+                        </p>
+                        <h4 style="font-size: 1.3rem; font-weight: 600;">
+                            Conferência - Planeamento de Compras Públicas: a
+                            chave do sucesso
+                        </h4>
+                        <p style="margin-top: 1rem;">
+                            Como o planeamento gera melhores decisões e
+                            resultados no setor público
+                        </p>
+
+                        <h5
+                            style="font-size: 1.3rem; font-weight: 600; margin-top: 2rem;"
+                        >
+                            Valor da Inscrição
+                        </h5>
+                        <ul
+                            style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem;line-height: 180%;"
+                        >
+                            <li
+                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                            >
+                                — Público em geral: 30 € (valor já com IVA
+                                incluído)
+                            </li>
+                            <li
+                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                            >
+                                — Estudantes da Faculdade de Direito da
+                                Universidade de Lisboa (FDUL): 13 €
+                            </li>
+                        </ul>
+                        <p style="margin-top: 1rem;">
+                            Os formandos CEACP e os associados ATAM beneficiam
+                            de prioridade nas inscrições.
+                        </p>
+
+                        <h5
+                            style="font-size: 1.3rem; font-weight: 600; margin-top: 2rem;"
+                        >
+                            A inscrição garante:
+                        </h5>
+                        <ul
+                            style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem; line-height: 180%;"
+                        >
+                            <li
+                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                            >
+                                — Acesso integral à Conferência;
+                            </li>
+                            <li
+                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                            >
+                                — Certificado de participação;
+                            </li>
+                            <li
+                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                            >
+                                — Oferta do livro “Guia Prático de Planeamento
+                                de Compras Públicas”.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div id="row-form" class="col-12 form-field">
@@ -558,7 +854,10 @@ on:mousemove={handleMousemove}>
                                 />
                                 <label for="demo_opt_1"></label>
                             </div>
-                            <div class=" d-flex align-items-center" style="margin-left:15px;">
+                            <div
+                                class=" d-flex align-items-center"
+                                style="margin-left:15px;"
+                            >
                                 Li e tomei conhecimento das condições de
                                 tratamento dos meus dados pessoais
                             </div>
@@ -615,7 +914,7 @@ on:mousemove={handleMousemove}>
     .tit-sticky {
         position: sticky;
         top: 0px;
-        background-color: var(--bs-body-bg);
+        background-color: transparent;
         width: 100%;
         max-width: 100%;
         padding: 10px 0;
@@ -640,16 +939,23 @@ on:mousemove={handleMousemove}>
     .txt-area:focus {
         width: 100%;
         background-color: transparent;
-        border: 1px solid var(--bs-border-color);
+        border: 1px solid #000;
         height: 20vh;
         outline: none;
         caret-color: var(--bs-body-color);
         padding: 10px;
         color: var(--bs-body-color);
     }
+    .table-div {
+        padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    }
     .table td,
     .table th {
         margin: 10px 0;
+        background-color: transparent;
+        padding: 10px 0;
+        max-width: 600px;
+        min-width: 100px;
     }
 
     .img-conf {
@@ -666,26 +972,41 @@ on:mousemove={handleMousemove}>
     }
 
     .form-ins {
-        background-color: #eeeeee;
+        background-color: #f0f0f0;
         padding: 5vh 5vw;
     }
 
     .cool {
-        color: var(--text-dark);
-        background-color: #eeeeee;
-        border: 1px solid #cccccc;
+        color: var(--bs-body-color);
+        background-color: #f0f0f0;
+        border: 1px solid #000000;
     }
 
     .submit-ceacp {
-        color: var(--text-dark);
-        border: 1px solid var(--text-dark);
+        color: black;
+        border: 1px solid black;
     }
 
     #inputPreview {
-        border: solid 1px var(--text-dark);
+        border: solid 1px var(--bs-body-color);
     }
 
     .css-checkbox:checked + label {
         background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdxJybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzIiCiAgIHZpZXdCb3g9IjAgMCAxMi4zMDIgMTIuMzAyIgogICBoZWlnaHQ9IjEyLjMwMiIKICAgd2lkdGg9IjEyLjMwMiI+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMTQiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMxMiIgLz4KICA8cGF0aCAgICAgZD0iTSAxMS40NjUgMS44MjIgQyAxMS4xMzIgMS40ODkgMTAuNjA5IDEuNDg5IDEwLjI3NSAxLjgyMiBMIDQuNTUgNy41NDcgTCAyLjAzMSA1MDIgQyAxLjY5OCA0LjY2OSAxLjE3NSA0LjY2OSAwLjg0MiA1LjAwMyBDIDAuNTA4IDUuMzM3IDAuNTA4IDUuODU5IDAuODQyIDYuMTkzIEwgMy4zOTMgOC43NDMgQyAzLjcyNyA5LjA3NyA0LjI1IDkuMDc3IDQuNTg0IDguNzQzIEwgMTEuNDY1IDEuODI4MiIgCiAgICAgc3R5bGU9ImZpbGw6IzAwMzM2NjtmaWxsLW9wYWNpdHk6MSIKICAgaWQ9InBhdGg0IiAvPgo8L3N2Zz4K");
+    }
+    .conference-switch {
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .conference-switch p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .conference-switch a {
+        font-weight: bold;
+        text-decoration: underline;
     }
 </style>

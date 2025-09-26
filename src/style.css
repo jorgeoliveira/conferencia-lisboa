@@ -28,11 +28,11 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/254.jpeg") no-repeat center center fixed;
+    background: url("/Conferencias_2025_28 – grande.jpeg") no-repeat center center fixed;
     background-size: cover;
     z-index: -1;
     /* Garante que fique atrás do conteúdo */
-    height: 120vh;
+    height: 140vh;
     /* opacity: 0.06; Lower opacity for dark mode */
 }
 
@@ -125,9 +125,9 @@ header {
 }
 
 .hero {
-    color: black;
+    color: white;
     margin: 50px 0 25px 0;
-    background-color: #00000024;
+    background-color: #00000063;
     padding: 25px;
     font-weight: 300;
     border-radius: 5px;
