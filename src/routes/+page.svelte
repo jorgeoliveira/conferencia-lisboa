@@ -168,7 +168,7 @@ on:mousemove={handleMousemove}>
             <div class="col-sm-6 desktop-countdown-col">
                 <div class="mobile-header-elements">
                     <img
-                        src="CAPACITAR PARA TRANSFORMAR.png"
+                        src={logoSrc}
                         class="logo-mobile"
                         style="width:250px;"
                         alt="Logo Mobile"
