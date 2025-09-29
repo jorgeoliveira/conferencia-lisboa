@@ -37,6 +37,18 @@
 
     let showWhiteLogo = true;
 
+    function smoothScroll(event) {
+        event.preventDefault();
+        const targetId = event.currentTarget.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
     onMount(() => {
         function handleScroll() {
             const section2 = document.querySelector(".section-2");
@@ -149,118 +161,72 @@ on:mousemove={handleMousemove}>
 <div class="blob" style="left:{m.x}px; top:{m.y}px" ></div>
 -->
 <div class="wrapper">
-    <div class="header">
-        <div class="row">
-            <div class="col-sm-6 no-mb">
-                <div class="logo logo-container">
-                    <!-- Sizing image (keeps container dimensions) -->
+    <section class="hero-section">
+        <div class="hero-video-background">
+            <video
+                autoplay
+                loop
+                muted
+                playsinline
+                src="https://cursoespecializacao.ceacp.pt/assets/ceacp.mp4"
+            ></video>
+            <div class="hero-overlay"></div>
+        </div>
 
-                    <!-- Fading images -->
-                    <div class="fading-logo-wrapper">
-                        <img
-                            src="ceacp-cia-slogan-white.png"
-                            class="logo-main"
-                            class:visible={showWhiteLogo}
-                            alt="Logo White"
-                        />
-                        <img
-                            src="CAPACITAR PARA TRANSFORMAR.png"
-                            class="logo-main"
-                            class:visible={!showWhiteLogo}
-                            alt="Logo Color"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 desktop-countdown-col">
-                <div class="mobile-header-elements">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <!-- Desktop Logo Structure -->
+                <div class="logo-desktop-wrapper">
                     <div class="logo-container">
-                        <!-- Sizing image -->
-                        <img
-                            src="CAPACITAR PARA TRANSFORMAR.png"
-                            alt=""
-                            style="visibility: hidden; width: 250px;"
-                        />
-                        <!-- Fading images -->
+                        <img src="CAPACITAR PARA TRANSFORMAR.png" alt="" style="visibility: hidden; width: 350px;" />
                         <div class="fading-logo-wrapper">
-                            <img
-                                src="ceacp-cia-slogan-white.png"
-                                class="logo-mobile"
-                                class:visible={showWhiteLogo}
-                                alt="Logo Mobile White"
-                            />
-                            <img
-                                src="CAPACITAR PARA TRANSFORMAR.png"
-                                class="logo-mobile"
-                                class:visible={!showWhiteLogo}
-                                alt="Logo Mobile Color"
-                            />
+                            <img src="ceacp-cia-new-white.png" class="logo-main" class:visible={showWhiteLogo} alt="Logo White" />
+                            <img src="CAPACITAR PARA TRANSFORMAR.png" class="logo-main" class:visible={!showWhiteLogo} alt="Logo Color" />
                         </div>
                     </div>
-                    <Countdown
-                        targetDate={new Date("2025-10-30T10:00:00").getTime()}
-                    />
+                </div>
+                <!-- Mobile Logo Structure -->
+                <div class="logo-mobile-wrapper">
+                     <div class="logo-container">
+                        <img src="CAPACITAR PARA TRANSFORMAR.png" alt="" style="visibility: hidden; width: 250px;" />
+                        <div class="fading-logo-wrapper">
+                            <img src="ceacp-cia-new-white.png" class="logo-mobile" class:visible={showWhiteLogo} alt="Logo Mobile White" />
+                            <img src="CAPACITAR PARA TRANSFORMAR.png" class="logo-mobile" class:visible={!showWhiteLogo} alt="Logo Mobile Color" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <section
-        class="d-flex justify-content-center align-items-center text-hero header-desk-top"
-    >
-        <div
-            id="hero"
-            class="container row d-flex flex-column justify-content-center align-items-center"
-            style="text-align: center;"
-        >
-            <div
-                class="col-12 col-md-12 col-lg-8 d-flex flex-column"
-                style="width:90%;"
-            >
-                <h1
-                    class="hero"
-                    style="line-height: 100%;
-                letter-spacing: 0.05em;"
-                >
-                    CONFERÊNCIA 2025<br /><span
-                        style="font-size: 1.6rem;line-height:120%;"
-                        >LISBOA<br /></span
-                    >
-                    <p style="font-size: 0.6rem;line-height:120%;">
-                        (Presencial)<br />
-                    </p>
-                    <span
-                        style="font-size: 1.7rem;line-height:120%;text-transform: uppercase;"
-                        >Planeamento de Compras Públicas: a chave do sucesso</span
-                    >
-                    <p style="font-size: 1rem;">
-                        Como o planeamento gera melhores decisões e resultados
-                        no setor público
-                    </p>
-                    <p style="font-size: 1rem;">
-                        <u
-                            style="text-underline-offset: 8px;text-decoration-thickness: 0.5px;">Pré-Inscrições abertas</u
-                        >
-                    </p>
+
+            <div class="hero-main-text">
+                <h1 class="animate-on-load" style="color:white;">
+                    CONFERÊNCIA 2025: LISBOA
                 </h1>
-            </div>
-            <div
-                class="col-12 col-md-12 col-lg-8 d-flex align-items-center justify-content-center m-0"
-            >
-                <p
-                    class="hero"
-                    style="width:100%;padding:  30px;
-    margin: 0px 19px;
-    margin-bottom: 50px;font-size:1rem;"
-                >
-                    Numa organização conjunta<br />
-                    <strong>CEACP — CIAcademy®</strong>,
-                    <strong style="white-space:nowrap;">CANGALHO</strong>, 
-                    <strong style="white-space:nowrap;">AAFDL </strong> e
-                    <strong style="white-space:nowrap;">DOWER</strong>
+                <p class="subtitle animate-on-load">
+                    Planear as Compras Públicas e evitar ilegalidades
                 </p>
+                <p class="sub-subtitle animate-on-load">
+                    Como o planeamento gera melhores decisões e resultados no setor público
+                </p>
+            </div>
+
+            <div class="hero-countdown animate-on-load">
+                 <Countdown
+                    targetDate={new Date("2025-10-30T10:00:00").getTime()}
+                />
+            </div>
+
+            <a href="#form-section" class="cta-button animate-on-load" on:click={smoothScroll}>Inscreva-se Agora</a>
+
+            <div class="hero-partners animate-on-load">
+                <p>Numa organização conjunta:</p>
+                <span>CEACP / CIAcademy®</span>
+                <span>CANGALHO</span>
+                <span>AAFDL</span>
+                <span>DOWER</span>
             </div>
         </div>
     </section>
+
     <div class="container-full section-2 bg-pattern">
         <div id="main-section" class="container">
             <div class="row mt-5 align-items-stretch d-flex">
@@ -950,6 +916,121 @@ on:mousemove={handleMousemove}>
 {/if}
 
 <style>
+    /* --- HERO SECTION STYLES --- */
+    .hero-section {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        overflow: hidden;
+    }
+    .hero-video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+    .hero-video-background video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 900px;
+    }
+    .hero-logo {
+        margin-bottom: 1rem;
+    }
+    .hero-main-text h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .hero-main-text .subtitle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: 0.5rem;
+        opacity: 0.9;
+    }
+     .hero-main-text .sub-subtitle {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 0.5rem;
+        opacity: 0.9;
+    }
+    .hero-countdown {
+        /* Countdown component might have its own styles, this is a container */
+        transform: scale(1.2); /* Make it a bit bigger */
+    }
+    .cta-button {
+        background-color: var(--primary-color, #e0a800); /* A gold-like color */
+        color: #000;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #fff;
+        transform: translateY(-3px);
+    }
+    .hero-partners {
+        margin-top: 1rem;
+    }
+    .hero-partners p {
+        margin-bottom: 0.5rem;
+        opacity: 0.8;
+    }
+    .hero-partners span {
+        margin: 0 0.75rem;
+        font-weight: 500;
+    }
+
+    /* --- ANIMATIONS --- */
+    .animate-on-load {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    .hero-main-text h1 { animation-delay: 0.2s; }
+    .hero-main-text .subtitle { animation-delay: 0.4s; }
+    .hero-main-text .sub-subtitle { animation-delay: 0.6s; }
+    .hero-countdown { animation-delay: 0.8s; }
+    .cta-button { animation-delay: 1s; }
+    .hero-partners { animation-delay: 1.2s; }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* --- FADING LOGO STYLES (from previous step) --- */
     .logo-container {
         position: relative;
         display: inline-block; /* This makes the container behave like an image for layout purposes */
@@ -962,8 +1043,15 @@ on:mousemove={handleMousemove}>
         width: 100%;
         height: 100%;
     }
-    .logo-main,
-    .logo-mobile {
+    .logo-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+     .logo-mobile {
         position: absolute;
         top: 0;
         left: 0;
@@ -971,8 +1059,7 @@ on:mousemove={handleMousemove}>
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
-    .logo-main.visible,
-    .logo-mobile.visible {
+    .logo-main.visible, .logo-mobile.visible {
         opacity: 1;
     }
     .wrapper {
@@ -1092,5 +1179,42 @@ on:mousemove={handleMousemove}>
     .conference-switch a {
         font-weight: bold;
         text-decoration: underline;
+    }
+
+    /* --- RESPONSIVE STYLES for MOBILE --- */
+    /* --- RESPONSIVE LOGO VISIBILITY --- */
+    .logo-mobile-wrapper {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .logo-desktop-wrapper {
+            display: none;
+        }
+        .logo-mobile-wrapper {
+            display: block;
+        }
+
+        .hero-main-text h1 {
+            font-size: 2.2rem;
+        }
+        .hero-main-text .subtitle {
+            font-size: 1.1rem;
+        }
+        .hero-main-text .sub-subtitle {
+            font-size: 0.9rem;
+        }
+        .hero-content {
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+        .cta-button {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+        }
+        .hero-partners span {
+            display: block;
+            margin: 0.25rem 0;
+        }
     }
 </style>
