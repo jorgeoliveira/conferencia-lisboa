@@ -199,7 +199,7 @@ on:mousemove={handleMousemove}>
 
             <div class="hero-main-text">
                 <h1 class="animate-on-load" style="color:white;">
-                    CONFERÊNCIA 2025: LISBOA
+                    CONFERÊNCIA 2025 LISBOA
                 </h1>
                 <p class="subtitle animate-on-load">
                     Planear as Compras Públicas e evitar ilegalidades
@@ -215,7 +215,7 @@ on:mousemove={handleMousemove}>
                 />
             </div>
 
-            <a href="#form-section" class="cta-button animate-on-load" on:click={smoothScroll}>Inscreva-se Agora</a>
+            <a href="#form-section" class="cta-button animate-on-load" on:click={smoothScroll}>Faça a Pré-Inscrição</a>
 
             <div class="hero-partners animate-on-load">
                 <p>Numa organização conjunta:</p>
