@@ -218,7 +218,7 @@ on:mousemove={handleMousemove}>
             >
                 <h1
                     class="hero"
-                    style="line-height: 75%;
+                    style="line-height: 100%;
                 letter-spacing: 0.05em;"
                 >
                     CONFERÊNCIA 2025<br /><span
@@ -237,23 +237,25 @@ on:mousemove={handleMousemove}>
                         no setor público
                     </p>
                     <p style="font-size: 1rem;">
-                        <u>Pré-Inscrições abertas</u>
+                        <u
+                            style="text-underline-offset: 8px;text-decoration-thickness: 0.5px;">Pré-Inscrições abertas</u
+                        >
                     </p>
                 </h1>
             </div>
             <div
-                class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-center m-0"
+                class="col-12 col-md-12 col-lg-8 d-flex align-items-center justify-content-center m-0"
             >
                 <p
                     class="hero"
-                    style="width:380px;padding:  30px;
+                    style="width:100%;padding:  30px;
     margin: 0px 19px;
     margin-bottom: 50px;font-size:1rem;"
                 >
                     Numa organização conjunta<br />
-                    <strong>CEACP / CIAcademy®</strong><br />
-                    <strong style="white-space:nowrap;">CANGALHO,</strong>
-                    <strong style="white-space:nowrap;">AAFDL,</strong>
+                    <strong>CEACP — CIAcademy®</strong>,
+                    <strong style="white-space:nowrap;">CANGALHO</strong>, 
+                    <strong style="white-space:nowrap;">AAFDL </strong> e
                     <strong style="white-space:nowrap;">DOWER</strong>
                 </p>
             </div>
@@ -598,7 +600,8 @@ on:mousemove={handleMousemove}>
                             </div>
                             <div class="card-body">
                                 <p class="card-text cargo-desc">
-                                    Receção | <strong>Moderação</strong>, Tesoureiro <strong>AFFDL</strong>
+                                    Receção | <strong>Moderação</strong>,
+                                    Tesoureiro <strong>AFFDL</strong>
                                 </p>
                             </div>
                         </div>
@@ -651,12 +654,14 @@ on:mousemove={handleMousemove}>
                                         style="text-shadow: 2px 4px 0 #000000;"
                                     >
                                         Fernando Batista
-
                                     </h5>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <p class="card-text cargo-desc">Orador | Formador <strong>CEACP</strong>, Presidente do <strong>IMPIC</strong>
+                                <p class="card-text cargo-desc">
+                                    Orador | Formador <strong>CEACP</strong>,
+                                    Presidente do <strong>IMPIC</strong>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -682,7 +687,10 @@ on:mousemove={handleMousemove}>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <p class="card-text cargo-desc">Orador |  Formador <strong>CEACP</strong>, Advogado</p>
+                                <p class="card-text cargo-desc">
+                                    Orador | Formador <strong>CEACP</strong>,
+                                    Advogado
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -818,7 +826,13 @@ on:mousemove={handleMousemove}>
                         </div>
                         <div class="col-sm-6">
                             <label for="confNif">NIF</label>
-                            <input type="text" id="confNif" name="confNif"  class="cool" required />
+                            <input
+                                type="text"
+                                id="confNif"
+                                name="confNif"
+                                class="cool"
+                                required
+                            />
                         </div>
                         <div class="col-sm-6">
                             <label for="dtNasc"
