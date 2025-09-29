@@ -73,7 +73,7 @@
                     }
                 });
             });
-        
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -226,19 +226,19 @@ on:mousemove={handleMousemove}>
                 >
                     CONFERÊNCIA 2025<br /><span
                         style="font-size: 1.6rem;line-height:120%;"
-                        >LISBOA<br /></span
+                        >LISBOA<br />Auditório da Faculdade de Direito da Universidade de Lisboa</span
                     >
                     <p style="font-size: 0.6rem;line-height:120%;">
                         (Presencial)<br />
                     </p>
                     <span
                         style="font-size: 1.7rem;line-height:120%;text-transform: uppercase;"
-                        >Planear as Compras Públicas e evitar ilegalidades</span
+                        >Planeamento de Compras Públicas: a chave do sucesso</span
                     >
-                    <p>
-                        Como o planeamento gera melhores decisões e resultados
-                        no setor público
+                    <p style="font-size: 1rem;">
+                        Como o planeamento gera melhores decisões e resultados no setor público
                     </p>
+                    <p style="font-size: 1rem;"><u>Pré-Inscrições abertas</u></p>
                 </h1>
             </div>
             <div
@@ -545,8 +545,10 @@ on:mousemove={handleMousemove}>
                             <br /><br />
                             É também o autor do livro
                             <em
-                                ><b>"Guia Prático - Planeamento de Compras
-                                Públicas"</b></em
+                                ><b
+                                    >"Guia Prático - Planeamento de Compras
+                                    Públicas"</b
+                                ></em
                             >, uma obra de referência no setor.
                             <br /><br />
                             Tem desempenhado funções de consultoria em vários organismos
@@ -576,10 +578,10 @@ on:mousemove={handleMousemove}>
                         >
                             <div class="position-relative">
                                 <img
-                                    src="./blank.jpg"
+                                    src="./joao_pedro_freitas.jpg"
                                     class="card-img-top img-filter rounded-0"
                                     alt="Pedro Neves de Sousa"
-                                    style="filter: brightness(0.5);"
+                                    style="filter: brightness(0.8);"
                                 />
                                 <div class="cut-card">
                                     <h5
@@ -592,7 +594,7 @@ on:mousemove={handleMousemove}>
                             </div>
                             <div class="card-body">
                                 <p class="card-text cargo-desc">
-                                    Receção <strong>Moderação</strong>
+                                    Receção | <strong>Moderação</strong>
                                 </p>
                             </div>
                         </div>
@@ -620,7 +622,9 @@ on:mousemove={handleMousemove}>
                             </div>
                             <div class="card-body">
                                 <p class="card-text cargo-desc">
-                                    Orador | <strong>Dower</strong>
+                                    Orador | Conselheiro e Formador <strong
+                                        >CEACP</strong
+                                    >, Advogado <strong>DOWER</strong>
                                 </p>
                             </div>
                         </div>
@@ -684,88 +688,93 @@ on:mousemove={handleMousemove}>
 
     <section class="form-ins" id="form-section">
         <div class="row max-500">
-            
-                <div class="col-12 text-intro">
-                    <h1
-                        class=" "
-                        style="
+            <div class="col-12 text-intro">
+                <h1
+                    class=" "
+                    style="
             margin-bottom:5vh;  margin-top:20vh;"
+                >
+                    Formulário de inscrição
+                </h1>
+
+                <div
+                    class="inscricao-info"
+                    style="text-align: left; margin-top: 2rem; padding: 20px;"
+                >
+                    <p>Junte-se a nós!</p>
+                    <p>
+                        Conferência 2025: Os desafios das compras públicas, em
+                        especial o planeamento (Lisboa)
+                    </p>
+                    <h4 style="font-size: 1.3rem; font-weight: 600;">
+                        Conferência - Planeamento de Compras Públicas: a chave
+                        do sucesso
+                    </h4>
+                    <p style="margin-top: 1rem;">
+                        Como o planeamento gera melhores decisões e resultados
+                        no setor público
+                    </p>
+
+                    <h5
+                        style="font-size: 1.3rem; font-weight: 600; margin-top: 2rem;"
                     >
-                        Formulário de inscrição
-                    </h1>
-
-                    <div
-                        class="inscricao-info"
-                        style="text-align: left; margin-top: 2rem; padding: 20px;"
+                        Valor da Inscrição
+                    </h5>
+                    <ul
+                        style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem;line-height: 180%;"
                     >
-                        <p>Junte-se a nós!</p>
-                        <p>
-                            Conferência 2025: Os desafios das compras públicas,
-                            em especial o planeamento (Lisboa)
-                        </p>
-                        <h4 style="font-size: 1.3rem; font-weight: 600;">
-                            Conferência - Planeamento de Compras Públicas: a
-                            chave do sucesso
-                        </h4>
-                        <p style="margin-top: 1rem;">
-                            Como o planeamento gera melhores decisões e
-                            resultados no setor público
-                        </p>
+                        <li
+                            style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                        >
+                            — Formandos CEACP: 30 € (valor já com IVA incluído)
+                            -Inscrições Prioritárias
+                        </li>
+                        <li
+                            style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                        >
+                            — Estudantes da Faculdade de Direito da Universidade
+                            de Lisboa (FDUL): 13 €
+                        </li>
+                        <li
+                            style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
+                        >
+                            — Outras Inscrições: 30 € (valor já com IVA
+                            incluído)
+                        </li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        Os formandos CEACP e os associados ATAM beneficiam de
+                        prioridade nas inscrições.
+                    </p>
 
-                        <h5
-                            style="font-size: 1.3rem; font-weight: 600; margin-top: 2rem;"
+                    <h5
+                        style="font-size: 1.3rem; font-weight: 600; margin-top: 2rem;"
+                    >
+                        A inscrição garante:
+                    </h5>
+                    <ul
+                        style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem; line-height: 180%;"
+                    >
+                        <li
+                            style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
                         >
-                            Valor da Inscrição
-                        </h5>
-                        <ul
-                            style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem;line-height: 180%;"
+                            — Acesso integral à Conferência;
+                        </li>
+                        <li
+                            style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
                         >
-                            <li
-                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
-                            >
-                                — Público em geral: 30 € (valor já com IVA
-                                incluído)
-                            </li>
-                            <li
-                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
-                            >
-                                — Estudantes da Faculdade de Direito da
-                                Universidade de Lisboa (FDUL): 13 €
-                            </li>
-                        </ul>
-                        <p style="margin-top: 1rem;">
-                            Os formandos CEACP e os associados ATAM beneficiam
-                            de prioridade nas inscrições.
-                        </p>
-
-                        <h5
-                            style="font-size: 1.3rem; font-weight: 600; margin-top: 2rem;"
+                            — Certificado de participação;
+                        </li>
+                        <li
+                            style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
                         >
-                            A inscrição garante:
-                        </h5>
-                        <ul
-                            style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem; line-height: 180%;"
-                        >
-                            <li
-                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
-                            >
-                                — Acesso integral à Conferência;
-                            </li>
-                            <li
-                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
-                            >
-                                — Certificado de participação;
-                            </li>
-                            <li
-                                style="padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5rem;"
-                            >
-                                — Oferta do livro “Guia Prático de Planeamento
-                                de Compras Públicas”.
-                            </li>
-                        </ul>
-                    </div>
+                            — Oferta do livro “Guia Prático de Planeamento de
+                            Compras Públicas”.
+                        </li>
+                    </ul>
                 </div>
-             
+            </div>
+
             <div id="row-form" class="col-12 form-field">
                 <form
                     id="registrationForm"
@@ -930,7 +939,8 @@ on:mousemove={handleMousemove}>
         width: 100%;
         height: 100%;
     }
-    .logo-main, .logo-mobile {
+    .logo-main,
+    .logo-mobile {
         position: absolute;
         top: 0;
         left: 0;
@@ -938,7 +948,8 @@ on:mousemove={handleMousemove}>
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
-    .logo-main.visible, .logo-mobile.visible {
+    .logo-main.visible,
+    .logo-mobile.visible {
         opacity: 1;
     }
     .wrapper {
