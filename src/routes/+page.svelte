@@ -19,6 +19,7 @@
     let telf = "";
     let cargo = "";
     let org = "";
+    let confNif = "";
     let formfreq = "";
     let recaptchaResponse = "";
     let tematica =
@@ -115,7 +116,7 @@
                     const rowForm = (document.getElementById(
                         "row-form",
                     ).innerHTML =
-                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a reserva, caso nao receba, contacte <br>sc@ceacp-cia-cangalho.com</p>' +
+                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a reserva, caso nao receba, contacte <br>formacao@ceacp.pt</p>' +
                         "</div></div>");
                 } else if (
                     data.status == "error01" ||
@@ -153,7 +154,7 @@ on:mousemove={handleMousemove}>
             <div class="col-sm-6 no-mb">
                 <div class="logo logo-container">
                     <!-- Sizing image (keeps container dimensions) -->
-                   
+
                     <!-- Fading images -->
                     <div class="fading-logo-wrapper">
                         <img
@@ -232,9 +233,12 @@ on:mousemove={handleMousemove}>
                         >Planeamento de Compras Públicas: a chave do sucesso</span
                     >
                     <p style="font-size: 1rem;">
-                        Como o planeamento gera melhores decisões e resultados no setor público
+                        Como o planeamento gera melhores decisões e resultados
+                        no setor público
                     </p>
-                    <p style="font-size: 1rem;"><u>Pré-Inscrições abertas</u></p>
+                    <p style="font-size: 1rem;">
+                        <u>Pré-Inscrições abertas</u>
+                    </p>
                 </h1>
             </div>
             <div
@@ -293,7 +297,9 @@ on:mousemove={handleMousemove}>
                                         class="p-calendar pt-3"
                                         style="text-transform: uppercase; font-weight: 500; font-size: 13px;"
                                     >
-                                        Local: Lisboa<br>Auditório da Faculdade de Direito da Universidade de Lisboa
+                                        Local: Lisboa<br />Auditório da
+                                        Faculdade de Direito da Universidade de
+                                        Lisboa
                                     </p>
                                     <div
                                         style="width:100%; height:2px;background-color: #999;margin-top: 2vh;"
@@ -644,7 +650,8 @@ on:mousemove={handleMousemove}>
                                         class="card-title"
                                         style="text-shadow: 2px 4px 0 #000000;"
                                     >
-                                        Fernando Batista
+                                        Fernando Batista | Formador <strong>CEACP</strong>, Presidente do <strong>IMPIC</strong>
+
                                     </h5>
                                 </div>
                             </div>
@@ -810,6 +817,10 @@ on:mousemove={handleMousemove}>
                             />
                         </div>
                         <div class="col-sm-6">
+                            <label for="confNif">NIF</label>
+                            <input type="text" id="confNif" name="confNif"  class="cool" required />
+                        </div>
+                        <div class="col-sm-6">
                             <label for="dtNasc"
                                 >Data de Nascimento DD/MM/AAAA</label
                             >
@@ -842,7 +853,7 @@ on:mousemove={handleMousemove}>
                                 required
                             />
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <label for="org">Organização</label>
                             <input
                                 id="org"
