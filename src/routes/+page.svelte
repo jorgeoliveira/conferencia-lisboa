@@ -153,11 +153,7 @@ on:mousemove={handleMousemove}>
             <div class="col-sm-6 no-mb">
                 <div class="logo logo-container">
                     <!-- Sizing image (keeps container dimensions) -->
-                    <img
-                        src="CAPACITAR PARA TRANSFORMAR.png"
-                        alt=""
-                        style="visibility: hidden; width: 250px;"
-                    />
+                   
                     <!-- Fading images -->
                     <div class="fading-logo-wrapper">
                         <img
@@ -313,7 +309,7 @@ on:mousemove={handleMousemove}>
                                         style="width: 100%;"
                                     >
                                         <a
-                                            href="mailto:sv@ceacp-ciacademy-cangalho.com"
+                                            href="mailto:formacao@ceacp.pt"
                                             target="_blank"
                                         >
                                             <img
@@ -664,7 +660,7 @@ on:mousemove={handleMousemove}>
                         >
                             <div class="position-relative">
                                 <img
-                                    src="./blank.jpg"
+                                    src="./pedro santos azevedo.jpg"
                                     class="card-img-top img-filter rounded-0"
                                     alt="Carlos José Batalhão "
                                     style="filter: brightness(0.5);"

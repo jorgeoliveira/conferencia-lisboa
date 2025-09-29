@@ -399,6 +399,7 @@ html.lenis {
 
     .logo-main {
         display: none;
+        width: 250px;
     }
 
     .logo-mobile {
@@ -490,6 +491,7 @@ html.lenis {
 @media screen and (min-width: 769px) {
     .logo-main {
         display: block;
+        width: 300px!important;
     }
 
     .logo-mobile {
