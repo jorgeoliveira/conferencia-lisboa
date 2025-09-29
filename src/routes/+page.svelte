@@ -226,7 +226,7 @@ on:mousemove={handleMousemove}>
                 >
                     CONFERÊNCIA 2025<br /><span
                         style="font-size: 1.6rem;line-height:120%;"
-                        >LISBOA<br />Auditório da Faculdade de Direito da Universidade de Lisboa</span
+                        >LISBOA<br /></span
                     >
                     <p style="font-size: 0.6rem;line-height:120%;">
                         (Presencial)<br />
@@ -297,7 +297,7 @@ on:mousemove={handleMousemove}>
                                         class="p-calendar pt-3"
                                         style="text-transform: uppercase; font-weight: 500; font-size: 13px;"
                                     >
-                                        Local: Lisboa
+                                        Local: Lisboa<br>Auditório da Faculdade de Direito da Universidade de Lisboa
                                     </p>
                                     <div
                                         style="width:100%; height:2px;background-color: #999;margin-top: 2vh;"
