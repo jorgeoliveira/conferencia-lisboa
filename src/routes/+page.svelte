@@ -352,13 +352,15 @@ on:mousemove={handleMousemove}>
                                                     src="/dower-logo.jpeg"
                                                     class="img-conf"
                                                     alt="parceiro cangalho"
+                                                    style="margin:0;"
                                                 />
                                             </a>
 
                                             <a href="https://aafdl.pt/">
                                                 <img
-                                                    src="/aafdl.jpeg"
+                                                    src="./logo_aafdl-840x693_1.png"
                                                     class="img-conf"
+                                                    style="width:100%"
                                                     alt="parceiro cangalho"
                                                 />
                                             </a>
