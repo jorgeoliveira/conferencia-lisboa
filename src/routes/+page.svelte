@@ -598,7 +598,7 @@ on:mousemove={handleMousemove}>
                             </div>
                             <div class="card-body">
                                 <p class="card-text cargo-desc">
-                                    Receção | <strong>Moderação</strong>
+                                    Receção | <strong>Moderação</strong>, Tesoureiro <strong>AFFDL</strong>
                                 </p>
                             </div>
                         </div>
@@ -650,13 +650,13 @@ on:mousemove={handleMousemove}>
                                         class="card-title"
                                         style="text-shadow: 2px 4px 0 #000000;"
                                     >
-                                        Fernando Batista | Formador <strong>CEACP</strong>, Presidente do <strong>IMPIC</strong>
+                                        Fernando Batista
 
                                     </h5>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <p class="card-text cargo-desc">Orador</p>
+                                <p class="card-text cargo-desc">Orador | Formador <strong>CEACP</strong>, Presidente do <strong>IMPIC</strong>
                             </div>
                         </div>
                     </div>
@@ -682,7 +682,7 @@ on:mousemove={handleMousemove}>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <p class="card-text cargo-desc">Orador</p>
+                                <p class="card-text cargo-desc">Orador |  Formador <strong>CEACP</strong>, Advogado</p>
                             </div>
                         </div>
                     </div>
