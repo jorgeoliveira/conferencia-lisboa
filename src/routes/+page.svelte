@@ -212,6 +212,10 @@ on:mousemove={handleMousemove}>
             <div class="hero-countdown animate-on-load">
                  <Countdown
                     targetDate={new Date("2025-10-30T10:00:00").getTime()}
+                    containerClass="hero-countdown-container"
+                    blockClass="hero-countdown-block"
+                    numberClass="hero-countdown-number"
+                    labelClass="hero-countdown-label"
                 />
             </div>
 
@@ -981,8 +985,29 @@ on:mousemove={handleMousemove}>
         opacity: 0.9;
     }
     .hero-countdown {
-        /* Countdown component might have its own styles, this is a container */
-        transform: scale(1.2); /* Make it a bit bigger */
+        /* This is the outer container for animation delay */
+    }
+    :global(.hero-countdown-container) {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+    :global(.hero-countdown-block) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 80px;
+    }
+    :global(.hero-countdown-number) {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    :global(.hero-countdown-label) {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        opacity: 0.8;
+        margin-top: 0.5rem;
     }
     .cta-button {
         background-color: var(--primary-color, #e0a800); /* A gold-like color */
@@ -1207,6 +1232,15 @@ on:mousemove={handleMousemove}>
         .hero-content {
             gap: 1.5rem;
             padding: 1rem;
+        }
+        :global(.hero-countdown-container) {
+            gap: 1rem;
+        }
+        :global(.hero-countdown-number) {
+            font-size: 2rem;
+        }
+        :global(.hero-countdown-label) {
+            font-size: 0.7rem;
         }
         .cta-button {
             padding: 0.8rem 2rem;
