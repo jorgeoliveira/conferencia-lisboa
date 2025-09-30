@@ -23,7 +23,7 @@
     let formfreq = "";
     let recaptchaResponse = "";
     let tematica =
-        "Planeamento de Compras Públicas: a chave do sucesso (Lisboa)";
+        "Conferência - Planeamento de Compras Públicas: a chave do sucesso (Lisboa)";
     let map;
     let mapContainer;
 
