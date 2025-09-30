@@ -116,7 +116,7 @@
                     const rowForm = (document.getElementById(
                         "row-form",
                     ).innerHTML =
-                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a reserva, caso nao receba, contacte <br>formacao@ceacp.pt</p>' +
+                        '<div class="row"><div class="col-12"><h5>Inscrição enviada com sucesso!</h5><p>Vai receber um email a confirmar a pré-inscrição, caso nao receba, contacte <br>formacao@ceacp.pt</p>' +
                         "</div></div>");
                 } else if (
                     data.status == "error01" ||
