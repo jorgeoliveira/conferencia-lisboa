@@ -684,11 +684,8 @@ on:mousemove={handleMousemove}>
                     class="inscricao-info"
                     style="text-align: left; margin-top: 2rem; padding: 20px;"
                 >
-                    <p>Junte-se a nós!</p>
-                    <p>
-                        Conferência 2025: Os desafios das compras públicas, em
-                        especial o planeamento (Lisboa)
-                    </p>
+                     <h4 style="font-size: 1.3rem; font-weight: 600;">Junte-se a nós!</h4>
+                    
                     <h4 style="font-size: 1.3rem; font-weight: 600;">
                         Conferência - Planeamento de Compras Públicas: a chave
                         do sucesso
