@@ -180,7 +180,7 @@ on:mousemove={handleMousemove}>
                     <div class="logo-container">
                         <img src="CAPACITAR PARA TRANSFORMAR.png" alt="" style="visibility: hidden; width: 350px;" />
                         <div class="fading-logo-wrapper">
-                            <img src="ceacp-cia-new-white.png" class="logo-main" class:visible={showWhiteLogo} alt="Logo White" />
+                            <img src="ceacp-cia-slogan-white.png" class="logo-main" class:visible={showWhiteLogo} alt="Logo White" />
                             <img src="CAPACITAR PARA TRANSFORMAR.png" class="logo-main" class:visible={!showWhiteLogo} alt="Logo Color" />
                         </div>
                     </div>
@@ -190,7 +190,7 @@ on:mousemove={handleMousemove}>
                      <div class="logo-container">
                         <img src="CAPACITAR PARA TRANSFORMAR.png" alt="" style="visibility: hidden; width: 250px;" />
                         <div class="fading-logo-wrapper">
-                            <img src="ceacp-cia-new-white.png" class="logo-mobile" class:visible={showWhiteLogo} alt="Logo Mobile White" />
+                            <img src="ceacp-cia-slogan-white.png" class="logo-mobile" class:visible={showWhiteLogo} alt="Logo Mobile White" />
                             <img src="CAPACITAR PARA TRANSFORMAR.png" class="logo-mobile" class:visible={!showWhiteLogo} alt="Logo Mobile Color" />
                         </div>
                     </div>
