@@ -1011,6 +1011,7 @@ on:mousemove={handleMousemove}>
         letter-spacing: 0.05em;
         text-transform: uppercase;
         margin: 0;
+        width: 100%;
     }
     .hero-main-text .subtitle {
         font-size: 1.5rem;
