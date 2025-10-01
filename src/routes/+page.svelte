@@ -292,7 +292,7 @@ on:mousemove={handleMousemove}>
                                 </div>
                                 <div class="col-8 p-0 m-0">
                                     <p class="p-calendar">Dia 30 de Outubro</p>
-                                    <p class="p-calendar">das 14h30 às 17h</p>
+                                    <p class="p-calendar">das 14h30 às 17h15</p>
                                 </div>
                                 <div class="col-12 p-0 m-0">
                                     <div
@@ -488,7 +488,7 @@ on:mousemove={handleMousemove}>
                                         <td> Debate </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">17h00</th>
+                                        <th scope="row">17h15</th>
                                         <td> Encerramento </td>
                                     </tr>
                                 </tbody>
