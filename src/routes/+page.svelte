@@ -230,11 +230,12 @@ on:mousemove={handleMousemove}>
                     CONFERÊNCIA 2025 LISBOA
                 </h1>
                 <p class="subtitle animate-on-load">
-                    Planear as Compras Públicas e evitar ilegalidades
+                    Planeamento de Compras Públicas: a chave do sucesso
+
                 </p>
                 <p class="sub-subtitle animate-on-load">
-                    Como o planeamento gera melhores decisões e resultados no
-                    setor público
+                    Como o planeamento gera melhores decisões e resultados no setor público
+
                 </p>
             </div>
 
