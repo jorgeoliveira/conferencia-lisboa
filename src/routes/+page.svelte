@@ -231,11 +231,10 @@ on:mousemove={handleMousemove}>
                 </h1>
                 <p class="subtitle animate-on-load">
                     Planeamento de Compras Públicas: a chave do sucesso
-
                 </p>
                 <p class="sub-subtitle animate-on-load">
-                    Como o planeamento gera melhores decisões e resultados no setor público
-
+                    Como o planeamento gera melhores decisões e resultados no
+                    setor público
                 </p>
             </div>
 
@@ -791,6 +790,19 @@ on:mousemove={handleMousemove}>
                         >
                             — Oferta do livro “Guia Prático de Planeamento de
                             Compras Públicas”.
+                        </li>
+                    </ul>
+                    <h5>Dados para Pagamento</h5>
+                    <ul
+                        style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem; line-height: 180%;"
+                    >
+                        <li style="  margin-bottom: 0.5rem;">
+                            AAFDL – Associação Académica da Faculdade de Direito
+                            de Lisboa<br />
+                            NIPC: 500 920 869<br />
+                            IBAN: PT50 0035 0824 0000 7402 4316 9<br />
+                            Banco: Caixa Geral de Depósitos (CGD)<br />
+                            E-mail: antonia.bairinhas@aafdl.pt
                         </li>
                     </ul>
                 </div>
