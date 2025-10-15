@@ -251,7 +251,7 @@ on:mousemove={handleMousemove}>
             <a
                 href="#form-section"
                 class="cta-button animate-on-load"
-                on:click={smoothScroll}>Faça a Pré-Inscrição</a
+                on:click={smoothScroll}>Faça a Inscrição</a
             >
 
             <div class="hero-partners animate-on-load">
