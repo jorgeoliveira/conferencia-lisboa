@@ -941,7 +941,15 @@ on:mousemove={handleMousemove}>
                                 tratamento dos meus dados pessoais
                             </div>
                         </div>
-
+<div class="col-sm-12 d-flex" style="margin:0;">
+                             
+                            <div
+                                class=" d-flex align-items-center"
+                                style="margin-left:45px;"
+                            >
+                               <b>(A inscrição apenas se considera efetivada após a receção e validação do comprovativo de pagamento, o qual deverá ser remetido para o endereço eletrónico: antonia.bairinhas@aafdl.pt)</b>
+                            </div>
+                        </div>
                         <div id="recaptcha-container"></div>
 
                         <div class="col-12 d-flex justify-content-end">
