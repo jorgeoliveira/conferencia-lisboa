@@ -945,7 +945,7 @@ on:mousemove={handleMousemove}>
                              
                             <div
                                 class=" d-flex align-items-center"
-                                style="margin-left:45px;"
+                                style="margin-left:45px; font-size: 0.8rem;"
                             >
                                <b>(A inscrição apenas se considera efetivada após a receção e validação do comprovativo de pagamento, o qual deverá ser remetido para o endereço eletrónico: antonia.bairinhas@aafdl.pt)</b>
                             </div>
