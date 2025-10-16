@@ -792,17 +792,17 @@ on:mousemove={handleMousemove}>
                             Compras Públicas”.
                         </li>
                     </ul>
-                    <h5>Dados para Pagamento</h5>
+                    <h5><u style=" text-underline-offset: 5px;">Dados para Pagamento</u></h5>
                     <ul
                         style="list-style: none; padding-left: 0; margin-top: 1rem;font-size: 0.9rem; line-height: 180%;"
                     >
                         <li style="  margin-bottom: 0.5rem;">
-                            AAFDL – Associação Académica da Faculdade de Direito
-                            de Lisboa<br />
-                            NIPC: 500 920 869<br />
-                            IBAN: PT50 0035 0824 0000 7402 4316 9<br />
-                            Banco: Caixa Geral de Depósitos (CGD)<br />
-                            E-mail: antonia.bairinhas@aafdl.pt
+                            <b>Dados para Pagamento e Notas de Encomenda</b><br/>
+AAFDL – Associação Académica da Faculdade de Direito de Lisboa<br/>
+NIPC: 500 920 869<br/>
+IBAN: PT50 0035 0824 0000 7402 4316 9<br/>
+Banco: Caixa Geral de Depósitos (CGD)<br/>
+E-mail para envio de comprovativo: <a class="email" href="mailto:antonia.bairinhas@aafdl.pt;formacao@ceacp.pt">antonia.bairinhas@aafdl.pt</a> e <a class="email" href="mailto:antonia.bairinhas@aafdl.pt;formacao@ceacp.pt">formacao@ceacp.pt</a><br/>
                         </li>
                     </ul>
                 </div>
@@ -947,7 +947,7 @@ on:mousemove={handleMousemove}>
                                 class=" d-flex align-items-center"
                                 style="margin-left:45px; font-size: 0.8rem;"
                             >
-                               <b>(A inscrição apenas se considera efetivada após a receção e validação do comprovativo de pagamento, o qual deverá ser remetido para o endereço eletrónico: antonia.bairinhas@aafdl.pt)</b>
+                               <b>(A inscrição apenas se considera efetivada após a receção e validação do comprovativo de pagamento, o qual deverá ser remetido para o endereço eletrónico:  <a class="email" href="mailto:antonia.bairinhas@aafdl.pt;formacao@ceacp.pt">antonia.bairinhas@aafdl.pt</a> e <a class="email" href="mailto:antonia.bairinhas@aafdl.pt;formacao@ceacp.pt">formacao@ceacp.pt</a>)</b>
                             </div>
                         </div>
                         <div id="recaptcha-container"></div>
@@ -1288,7 +1288,10 @@ on:mousemove={handleMousemove}>
     .logo-mobile-wrapper {
         display: none;
     }
-
+.email{
+        color:var(--primary-gold);
+        text-underline-offset: 5px;
+    }
     @media (max-width: 768px) {
         .logo-desktop-wrapper {
             display: none;
