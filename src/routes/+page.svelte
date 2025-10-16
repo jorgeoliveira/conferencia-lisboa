@@ -800,7 +800,8 @@ on:mousemove={handleMousemove}>
                             <b>Dados para Pagamento e Notas de Encomenda</b><br/>
 AAFDL – Associação Académica da Faculdade de Direito de Lisboa<br/>
 NIPC: 500 920 869<br/>
-IBAN: PT50 0035 0824 0000 7402 4316 9<br/>
+IBAN: PT50 0035 0824 00007402431 69<br/>
+
 Banco: Caixa Geral de Depósitos (CGD)<br/>
 E-mail para envio de comprovativo: <a class="email" href="mailto:antonia.bairinhas@aafdl.pt;formacao@ceacp.pt">antonia.bairinhas@aafdl.pt</a> e <a class="email" href="mailto:antonia.bairinhas@aafdl.pt;formacao@ceacp.pt">formacao@ceacp.pt</a><br/>
                         </li>
