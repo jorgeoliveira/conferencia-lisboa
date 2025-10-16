@@ -715,7 +715,7 @@ on:mousemove={handleMousemove}>
                     style="
             margin-bottom:5vh;  margin-top:20vh;"
                 >
-                    Formulário de pré-inscrição
+                    Formulário de inscrição
                 </h1>
 
                 <div
